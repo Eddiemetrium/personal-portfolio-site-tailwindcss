@@ -1,9 +1,21 @@
+import {  useEffect, useRef } from "react";
+import { gsap } from "gsap";
 import SocialMediaIcons from "../components/SocialMediaIcons";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const Footer = () => {
+  const scrollRef = useRef(null);
+  useEffect(() => {
+    const el = scrollRef.current;
+    gsap.fromTo(
+      el,
+      { y: -60, duration: 7 },
+      { y: 0, duration: 10, ease: "elastic", scrollTrigger: { trigger: el }})}, []);
+
   return (
-    <footer className="h-50 bg-blue py-6 ">
-      <div className="w-10/12 mx-auto">
+    <footer  className="h-50 bg-blue py-6 ">
+      <div ref={scrollRef} className="w-10/12 mx-auto">
         <SocialMediaIcons />
         <div className="md:flex justify-center md:justify-between text-center ">
           <p className="font-playfair font-semibold text-2xl text-yellow">

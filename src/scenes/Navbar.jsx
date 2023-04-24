@@ -23,11 +23,12 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const logoRef = useRef(null);
 useEffect(() => {
   const el = logoRef.current;
-  gsap.from(el, { x: 70, duration: 3 });
+  gsap.from(el, { x: 90,rotation:0, duration: 1 });
   gsap.to(el, {
     x: -30,
-    duration: 5,
-    ease: "bounce({ template: none.out, strength: 3, points: 20, taper: none, randomize: true, clamp: false})",
+    rotation: 360,
+    duration: 2,
+    ease: "rough({ strength: 1})",
   });
 }, []);
 

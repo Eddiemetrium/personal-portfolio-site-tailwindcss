@@ -11,8 +11,8 @@ const Landing = ({ setSelectedPage }) => {
 const logoRef = useRef(null);
   useEffect(() => {
     const el = logoRef.current;
-    gsap.from(el, { rotation: 0, duration: 4 });
-    gsap.to(el, { rotation: 360, x: 0, duration: 7, ease: "elastic" });
+    gsap.from(el, { rotation: 0, duration: 6});
+    gsap.to(el, { rotation: 360, duration: 6, ease: "elastic" });
   }, []);
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
