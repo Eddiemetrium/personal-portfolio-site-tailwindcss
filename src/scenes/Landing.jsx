@@ -29,21 +29,21 @@ const logoRef = useRef(null);
           >
             <img
               alt="profile"
-              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
+              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px] rounded-full border-2"
               src={ProfileImg}
             />
           </div>
         ) : (
           <img
             alt="profile"
-            className="z-10 w-full max-w-[250px] md:max-w-[400px] height-[80px]"
+            className="z-10 w-full max-w-[250px] md:max-w-[400px] height-[80px] "
             src={ProfileImg}
           />
         )}
       </div>
 
       {/* MAIN TEXT */}
-      <div className="z-30 basis-2/5 mt-12 md:mt-32">
+      <div className="z-30 basis-2/5 mt-12 md:mt-32 ">
         {/* HEADINGS */}
         <motion.div
           initial="hidden"
@@ -59,19 +59,26 @@ const logoRef = useRef(null);
             ref={logoRef}
             className="text-5xl font-playfair z-10 text-center md:text-start "
           >
-            Edwin
+            Edwin-
             <span
               className="xs:relative xs: xs:font-semibold z-20 xs:before:content-brush
               before:absolute before:-left-[20px] before:-top-[70px] before:z-[-1]"
             >
-              Munene
+             Munene.
             </span>
           </p>
 
           <p className="mt-12 mb-5 text-sm text-center md:text-start">
             <Typed
-            className="text-lg text-bold"
-              strings={["Web-Design", "Consultation", "Windows Solutions"]}
+              className="text-lg text-bold"
+              strings={[
+                "JavaScript",
+                "ReactJS",
+                "NextJS",
+                "API",
+                "TailwindCSS",
+                "GSAP Animations",
+              ]}
               typeSpeed={60}
               backSpeed={50}
               loop

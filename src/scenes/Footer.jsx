@@ -10,8 +10,8 @@ const Footer = () => {
     const el = scrollRef.current;
     gsap.fromTo(
       el,
-      { y: -60, duration: 7 },
-      { y: 0, duration: 10, ease: "elastic", scrollTrigger: { trigger: el }})}, []);
+      { y: -50, duration: 3, rotation:0 },
+      { y: 0, duration: 5,rotation:0, ease: "SlowMo", scrollTrigger: { trigger: el }})}, []);
 
   return (
     <footer  className="h-50 bg-blue py-6 ">
