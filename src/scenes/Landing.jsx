@@ -61,21 +61,23 @@ const logoRef = useRef(null);
           >
             Edwin-
             <span
-              className="xs:relative xs: xs:font-semibold z-20 xs:before:content-brush
+              className="xs:relative xs: xs:font-semibold z-20 
               before:absolute before:-left-[20px] before:-top-[70px] before:z-[-1]"
             >
-             Munene.
+              Munene.
             </span>
           </p>
 
-          <p className="mt-12 mb-5 text-sm text-center md:text-start">
+          <p className="mt-12 mb-5 text-sm text-center md:text-start xs:text-start">
             <Typed
               className="text-lg text-bold"
               strings={[
                 "JavaScript",
                 "ReactJS",
                 "NextJS",
-                "API",
+                "Api Integration",
+                "Git",
+                "CSS3",
                 "TailwindCSS",
                 "GSAP Animations",
               ]}
@@ -99,19 +101,19 @@ const logoRef = useRef(null);
           }}
         >
           <AnchorLink
-            className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
+            className="bg-yellow text-deep-blue rounded-sm py-3 px-7 font-semibold
               hover:bg-blue hover:text-white transition duration-500"
             onClick={() => setSelectedPage("contact")}
-            href="#contact"
+            href="https://drive.google.com/file/d/1Hx66zdUCLVoVhmdc9-aOi3NPR6kJ4u3p/view?usp=sharing"
           >
-            Contact Me
+            Resume
           </AnchorLink>
           <AnchorLink
             className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
-            <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
+            <div className="bg-deep-blue  hover:bg-blue hover:text-white transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair ">
               Let's talk.
             </div>
           </AnchorLink>

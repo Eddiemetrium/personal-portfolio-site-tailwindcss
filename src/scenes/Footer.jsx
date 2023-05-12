@@ -11,10 +11,10 @@ const Footer = () => {
     gsap.fromTo(
       el,
       { y: -50, duration: 3, rotation:0 },
-      { y: 0, duration: 5,rotation:0, ease: "SlowMo", scrollTrigger: { trigger: el }})}, []);
+      { y: -10, duration: 3,rotation:0, ease: "SlowMo", scrollTrigger: { trigger: el }})}, []);
 
   return (
-    <footer  className="h-50 bg-blue py-6 ">
+    <footer  className="h-45 bg-blue py-6 ">
       <div ref={scrollRef} className="w-10/12 mx-auto">
         <SocialMediaIcons />
         <div className="md:flex justify-center md:justify-between text-center ">

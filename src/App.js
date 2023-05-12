@@ -82,6 +82,9 @@ function App() {
           <br />
           <br />
           <br />
+          <br />
+          <br />
+          <br />
           <Projects />
         </motion.div>
       </div>
@@ -102,7 +105,6 @@ function App() {
           amount="all"
           onViewportEnter={() => setSelectedPage("contact")}
         >
-          <br />
           <br />
           <br />
           <br />

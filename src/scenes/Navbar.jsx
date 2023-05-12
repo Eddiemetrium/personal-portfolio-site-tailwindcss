@@ -23,17 +23,17 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const logoRef = useRef(null);
 useEffect(() => {
   const el = logoRef.current;
-  gsap.from(el, { x: 90,rotation:180, duration: 1 });
+  gsap.from(el, { x: 100, rotation: 180, opacity: .0, duration: 1 });
   gsap.to(el, {
     x: -30,
-    rotation: 0,
+    rotation: 0,opacity:1,
     duration: 3,
-    ease: "rough({ strength: 2})",
+    ease: "bounce({ strength: 2})",
   });
 }, []);
 
   const [isMenuToggled, setIsMenuToggled] = useState(false);
-  const isDesktop = useMediaQuery("(min-width: 768px)");
+  const isDesktop = useMediaQuery("(min-width: 68px)");
   const navbarBackground = isTopOfPage ? "" : "bg-blue";
 
   return (
