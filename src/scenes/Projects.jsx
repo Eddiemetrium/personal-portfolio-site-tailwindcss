@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Project1 from "../assets/Project1.png"
 import Project2 from "../assets/Project2.png";
 import Project3 from "../assets/Project4.png";
-
+import Project5 from "../assets/Project5.png";
 
 const container = {
   hidden: {},
@@ -154,19 +154,19 @@ const Projects = () => {
           </div>
           <div className="relative">
             <div>
-              <img src={"../assets/project-1.jpeg"} alt={Project} />
+              <img src={Project5} alt={Project} />
               <div className="absolute inset-0 bg-black opacity-0 hover:opacity-60 flex flex-col  items-center justify-between">
                 <p className="text-white text-sm mt-5 text-center">
-                  Three line description
+                  Simple ReactJs admin dashboard, in NEXTJS and tailwind. No dark theme though
                 </p>
                 <div className="flex justify-between  mb-5">
-                  <a href="#">
+                  <a href="https://nextjs-dashboard-tailwind-alpha.vercel.app/">
                     <button className="bg-white text-black px-4 py-2 rounded-lg inline-block">
                       Go to Site
                     </button>
                   </a>
 
-                  <a href="#">
+                  <a href="https://github.com/Eddiemetrium/nextjs-dashboard-tailwind">
                     <p className="text-blue px-4 pl-2 underline">Github Link</p>
                   </a>
                 </div>
