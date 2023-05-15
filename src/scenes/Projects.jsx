@@ -4,6 +4,8 @@ import Project1 from "../assets/Project1.png"
 import Project2 from "../assets/Project2.png";
 import Project3 from "../assets/Project4.png";
 import Project5 from "../assets/Project5.png";
+import Project6 from "../assets/Project6.png";
+
 
 const container = {
   hidden: {},
@@ -92,13 +94,21 @@ const Projects = () => {
                   form submit email and tailwind css all mobile responsive.
                 </p>
                 <div className="flex justify-between  mb-5">
-                  <a href="https://typescript-react-fitness-application.vercel.app/">
+                  <a
+                    href="https://typescript-react-fitness-application.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <button className="bg-white text-black px-4 py-2 rounded-lg inline-block">
                       Go to Site
                     </button>
                   </a>
 
-                  <a href="https://github.com/Eddiemetrium/typescript-react-fitness-application">
+                  <a
+                    href="https://github.com/Eddiemetrium/typescript-react-fitness-application"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <p className="text-blue px-4 pl-2 underline">Github Link</p>
                   </a>
                 </div>
@@ -115,12 +125,20 @@ const Projects = () => {
                 </p>
                 <div className="flex justify-between  mb-5">
                   <a href="https://tic-tac-toe-js-three.vercel.app/">
-                    <button className="bg-white text-black px-4 py-2 rounded-lg inline-block">
+                    <button
+                      className="bg-white text-black px-4 py-2 rounded-lg inline-block"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       Go to Site
                     </button>
                   </a>
 
-                  <a href="https://github.com/Eddiemetrium/tic-tac-toe-js">
+                  <a
+                    href="https://github.com/Eddiemetrium/tic-tac-toe-js"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <p className="text-blue px-4 pl-2 underline">Github Link</p>
                   </a>
                 </div>
@@ -157,16 +175,25 @@ const Projects = () => {
               <img src={Project5} alt={Project} />
               <div className="absolute inset-0 bg-black opacity-0 hover:opacity-60 flex flex-col  items-center justify-between">
                 <p className="text-white text-sm mt-5 text-center">
-                  Simple ReactJs admin dashboard, in NEXTJS and tailwind. No dark theme though
+                  Simple ReactJs admin dashboard, in NEXTJS and tailwind. No
+                  dark theme though
                 </p>
                 <div className="flex justify-between  mb-5">
-                  <a href="https://nextjs-dashboard-tailwind-alpha.vercel.app/">
+                  <a
+                    href="https://nextjs-dashboard-tailwind-alpha.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <button className="bg-white text-black px-4 py-2 rounded-lg inline-block">
                       Go to Site
                     </button>
                   </a>
 
-                  <a href="https://github.com/Eddiemetrium/nextjs-dashboard-tailwind">
+                  <a
+                    href="https://github.com/Eddiemetrium/nextjs-dashboard-tailwind"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <p className="text-blue px-4 pl-2 underline">Github Link</p>
                   </a>
                 </div>
@@ -175,19 +202,19 @@ const Projects = () => {
           </div>
           <div className="relative">
             <div>
-              <img src={"../assets/project-1.jpeg"} alt={Project} />
+              <img src={Project6} alt={Project} />
               <div className="absolute inset-0 bg-black opacity-0 hover:opacity-60 flex flex-col  items-center justify-between">
                 <p className="text-white text-sm mt-5 text-center">
                   Three line description
                 </p>
                 <div className="flex justify-between  mb-5">
-                  <a href="#">
+                  <a href="https://project-metaverse-khaki.vercel.app/">
                     <button className="bg-white text-black px-4 py-2 rounded-lg inline-block">
                       Go to Site
                     </button>
                   </a>
 
-                  <a href="#">
+                  <a href="https://github.com/Eddiemetrium/project_metaverse">
                     <p className="text-blue px-4 pl-2 underline">Github Link</p>
                   </a>
                 </div>
