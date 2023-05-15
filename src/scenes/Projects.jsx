@@ -87,8 +87,7 @@ const Projects = () => {
           </div>
           <div className="relative">
             <div>
-              <img src={Project1} alt={Project} />
-              <div className="absolute inset-0 bg-black opacity-0 hover:opacity-60 flex flex-col  items-center justify-between">
+              <img src={Project1} alt={Project} />            <div className="absolute inset-0 bg-black opacity-0 hover:opacity-60 flex flex-col  items-center justify-between">
                 <p className="text-white text-sm mt-5 text-center">
                   Gym website built with typescript, framer motion animation,
                   form submit email and tailwind css all mobile responsive.
