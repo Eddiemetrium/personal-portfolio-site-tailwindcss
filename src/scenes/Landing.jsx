@@ -57,9 +57,9 @@ const logoRef = useRef(null);
         >
           <p
             ref={logoRef}
-            className="text-5xl font-playfair z-10 text-center md:text-start "
+            className="glow text-5xl font-playfair z-10 text-center md:text-start "
           >
-            Edwin-
+            Edwin~
             <span
               className="xs:relative xs: xs:font-semibold z-20 
               before:absolute before:-left-[20px] before:-top-[70px] before:z-[-1]"
@@ -70,7 +70,7 @@ const logoRef = useRef(null);
 
           <p className="mt-12 mb-5 text-sm text-center md:text-start xs:text-start">
             <Typed
-              className="text-lg text-bold"
+              className="text-xl text-bold"
               strings={[
                 "JavaScript",
                 "ReactJS",
@@ -101,12 +101,16 @@ const logoRef = useRef(null);
           }}
         >
           <AnchorLink
-            className="bg-yellow text-deep-blue rounded-sm py-3 px-7 font-semibold
+            className="resume bg-yellow text-deep-blue rounded-sm py-3 px-7 font-semibold
               hover:bg-blue hover:text-white transition duration-500"
             onClick={() => setSelectedPage("contact")}
             href="https://drive.google.com/file/d/1Hx66zdUCLVoVhmdc9-aOi3NPR6kJ4u3p/view?usp=sharing"
           >
+            <span class="shine-line"></span>
+            <span class="shine-right"></span>
             Resume
+            <span class="shine-left"></span>
+            <span class="shine"></span>
           </AnchorLink>
           <AnchorLink
             className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
