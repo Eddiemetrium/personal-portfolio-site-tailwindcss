@@ -48,7 +48,11 @@ body,
     }
 }
 .nav-logo{
-max-width: 5rem !important;
+max-width: 4rem !important;
+}
+.main-img{
+  max-width: 22rem;
+  max-height: 18rem;
 }
 .resume {
   position: relative;
@@ -104,7 +108,7 @@ position: absolute;
 position: absolute;
 display: flex;
   top:0px;
-  left: 262px;
+  left: 261.5px;
  height: 50%;
   width: 5px;
   background: linear-gradient(to right, rgb(0 0 0 / 0),#0400ff );
