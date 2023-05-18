@@ -84,7 +84,7 @@ max-width: 4rem !important;
   z-index: 2;
 }
 .glow{
- font-size:3.5rem;
+ font-size:3rem;
   color:white;
   font-family: 'Merienda', cursive;
   animation-name:glow;
@@ -93,7 +93,7 @@ max-width: 4rem !important;
   animation-direction:alternate;
 }
 .shine-right{
-position: absolute;
+/* position: absolute;
   top: 0;
   bottom: 0;
   right: 112px;
@@ -101,17 +101,16 @@ position: absolute;
   width: 5px;
   background: linear-gradient(to right, #0400ff,rgb(0 0 0 / 0%) );
     animation: animate3 2s linear infinite; 
-
-  z-index: 2;
+  z-index: 2; */
 }
 .shine-left{
-position: absolute;
+/* position: absolute;
   top: 0;
   bottom: 0;
-  right: -163px;
+  right: -10.1em;
  height: 50%;
   width: 5px;
   background: linear-gradient(to left, #0400ff,rgb(0 0 0 / 0%) );
     animation: animate3 2s linear infinite; 
-  z-index: 2;
+  z-index: 2; */
 }
