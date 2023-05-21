@@ -85,138 +85,166 @@ const Projects = () => {
           >
             BEAUTIFUL USER INTERFACES
           </div>
-          <div className="relative">
-            <div>
-              <img src={Project1} alt={Project} />            <div className="absolute inset-0 bg-black opacity-0 hover:opacity-60 flex flex-col  items-center justify-between">
-                <p className="text-white text-sm mt-5 text-center">
-                  Gym website built with typescript, framer motion animation,
-                  form submit email and tailwind css all mobile responsive.
-                </p>
-                <div className="flex justify-between  mb-5">
-                  <a
-                    href="https://typescript-react-fitness-application.vercel.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <button className="bg-white text-black px-4 py-2 rounded-lg inline-block">
-                      Go to Site
-                    </button>
-                  </a>
+          <div class="rounded overflow-hidden shadow-lg">
+            <img class="w-full" src={Project1} alt="evo gym" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-center text-xl mb-2">Evo Gym</div>
+              <p class="text-gray-700 text-base">
+                Gym website built with typescript, framer motion animation, form
+                submit email working in real time and tailwind css. Mobile
+                responsive.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <div className="flex justify-between  mt-2">
+                <a
+                  href="https://typescript-react-fitness-application.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="bg-white underline text-black px-4 py-2 rounded-lg inline-block hover:text-orange-700">
+                    Go to Site
+                  </button>
+                </a>
 
-                  <a
-                    href="https://github.com/Eddiemetrium/typescript-react-fitness-application"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <p className="text-blue px-4 pl-2 underline">Github Link</p>
-                  </a>
-                </div>
+                <a
+                  href="https://github.com/Eddiemetrium/typescript-react-fitness-application"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <p className="text-blue px-4 pl-2 underline">Github Link</p>
+                </a>
               </div>
             </div>
           </div>
 
-          <div className="relative">
-            <div>
-              <img src={Project2} alt={Project} />
-              <div className="absolute inset-0 bg-black opacity-0 hover:opacity-60 flex flex-col  items-center justify-between">
-                <p className="text-white text-sm mt-5 text-center">
-                  Simple JavaScript tic tac toe game. Pure Vanila JavaScript.
-                </p>
-                <div className="flex justify-between  mb-5">
-                  <a href="https://tic-tac-toe-js-three.vercel.app/">
-                    <button
-                      className="bg-white text-black px-4 py-2 rounded-lg inline-block"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Go to Site
-                    </button>
-                  </a>
+          <div class="rounded overflow-hidden shadow-lg">
+            <img class="w-full" src={Project2} alt="evo gym" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-center text-xl mb-2">Tic Tac Toe</div>
+              <p class="text-gray-700 text-base py-4">
+                Simple JavaScript tic tac toe game. Pure Vanila JavaScript.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <div className="flex justify-between  mt-2">
+                <a
+                  href="https://tic-tac-toe-js-three.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="bg-white underline text-black px-4 py-2 rounded-lg inline-block hover:text-orange-700">
+                    Go to Site
+                  </button>
+                </a>
 
-                  <a
-                    href="https://github.com/Eddiemetrium/tic-tac-toe-js"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <p className="text-blue px-4 pl-2 underline">Github Link</p>
-                  </a>
-                </div>
+                <a
+                  href="https://github.com/Eddiemetrium/tic-tac-toe-js"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <p className="text-blue px-4 pl-2 underline">Github Link</p>
+                </a>
               </div>
             </div>
           </div>
 
           {/* ROW 2 */}
+          <div class="rounded overflow-hidden shadow-lg">
+            <img class="w-full" src={Project3} alt="evo gym" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-center text-xl mb-2">
+                {" "}
+                Hangman Game
+              </div>
+              <p class="text-gray-700 text-base">
+                Hangman game written in typescript and vanila CSS. Try it and
+                have fun.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <div className="flex justify-between  mt-2">
+                <a
+                  href="https://eddiemetrium.github.io/hangman-typescript-web-game"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="bg-white underline text-black px-4 py-2 rounded-lg inline-block hover:text-orange-700">
+                    Go to Site
+                  </button>
+                </a>
 
-          <div className="relative">
-            <div>
-              <img src={Project3} alt={Project} />
-              <div className="absolute inset-0 bg-black opacity-0 hover:opacity-60 flex flex-col  items-center justify-between">
-                <p className="text-white text-sm mt-5 text-center">
-                  Hangman game written in typescript and vanila CSS. Try it and
-                  have fun.
-                </p>
-                <div className="flex justify-between  mb-5">
-                  <a href="https://eddiemetrium.github.io/hangman-typescript-web-game">
-                    <button className="bg-white text-black px-4 py-2 rounded-lg inline-block">
-                      Go to Site
-                    </button>
-                  </a>
-
-                  <a href="https://github.com/Eddiemetrium/hangman-typescript-web-game">
-                    <p className="text-blue px-4 pl-2 underline">Github Link</p>
-                  </a>
-                </div>
+                <a
+                  href="https://github.com/Eddiemetrium/hangman-typescript-web-game"
+                  rel="noreferrer"
+                >
+                  <p className="text-blue px-4 pl-2 underline">Github Link</p>
+                </a>
               </div>
             </div>
           </div>
-          <div className="relative">
-            <div>
-              <img src={Project5} alt={Project} />
-              <div className="absolute inset-0 bg-black opacity-0 hover:opacity-60 flex flex-col  items-center justify-between">
-                <p className="text-white text-sm mt-5 text-center">
-                  Simple ReactJs admin dashboard, in NEXTJS and tailwind. No
-                  dark theme though
-                </p>
-                <div className="flex justify-between  mb-5">
-                  <a
-                    href="https://nextjs-dashboard-tailwind-alpha.vercel.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <button className="bg-white text-black px-4 py-2 rounded-lg inline-block">
-                      Go to Site
-                    </button>
-                  </a>
 
-                  <a
-                    href="https://github.com/Eddiemetrium/nextjs-dashboard-tailwind"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <p className="text-blue px-4 pl-2 underline">Github Link</p>
-                  </a>
-                </div>
+          <div class="rounded overflow-hidden shadow-lg">
+            <img class="w-full" src={Project5} alt="evo gym" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-center text-xl mb-2">
+                Admin Dashboard
+              </div>
+              <p class="text-gray-700 text-base">
+                Simple ReactJs admin dashboard, in NEXTJS and tailwind. Dark
+                theme though
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <div className="flex justify-between  mt-2">
+                <a
+                  href="https://nextjs-dashboard-tailwind-alpha.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="bg-white underline text-black px-4 py-2 rounded-lg inline-block hover:text-orange-700">
+                    Go to Site
+                  </button>
+                </a>
+
+                <a
+                  href="https://github.com/Eddiemetrium/nextjs-dashboard-tailwind"
+                  rel="noreferrer"
+                >
+                  <p className="text-blue px-4 pl-2 underline">Github Link</p>
+                </a>
               </div>
             </div>
           </div>
-          <div className="relative">
-            <div>
-              <img src={Project6} alt={Project} />
-              <div className="absolute inset-0 bg-black opacity-0 hover:opacity-60 flex flex-col  items-center justify-between">
-                <p className="text-white text-sm mt-5 text-center">
-                  Three line description
-                </p>
-                <div className="flex justify-between  mb-5">
-                  <a href="https://project-metaverse-khaki.vercel.app/">
-                    <button className="bg-white text-black px-4 py-2 rounded-lg inline-block">
-                      Go to Site
-                    </button>
-                  </a>
+          <div class="rounded overflow-hidden shadow-lg">
+            <img class="w-full" src={Project6} alt="Metaverse website" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-center text-xl mb-2">
+                Metaverse Website
+              </div>
+              <p class="text-gray-700 text-base">
+                Metaverse website with framer motion animation. Styled with
+                tailwind css. Best scroll ever.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <div className="flex justify-between  mt-2">
+                <a
+                  href="https://project-metaverse-khaki.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="bg-white underline text-black px-4 py-2 rounded-lg inline-block hover:text-orange-700">
+                    Go to Site
+                  </button>
+                </a>
 
-                  <a href="https://github.com/Eddiemetrium/project_metaverse">
-                    <p className="text-blue px-4 pl-2 underline">Github Link</p>
-                  </a>
-                </div>
+                <a
+                  href="https://github.com/Eddiemetrium/project_metaverse"
+                  rel="noreferrer"
+                >
+                  <p className="text-blue px-4 pl-2 underline">Github Link</p>
+                </a>
               </div>
             </div>
           </div>

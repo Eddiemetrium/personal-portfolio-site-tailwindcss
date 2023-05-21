@@ -47,6 +47,8 @@ body,
         transform: translateY(-5%);
     }
 }
+
+
 .nav-logo{
 max-width: 4rem !important;
 }
