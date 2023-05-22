@@ -47,7 +47,7 @@ function App() {
     <div className="app bg-deep-blue">
       <Particles
         id="tsparticles"
-        url="../src/Particles/particlesjs-config (1).json"
+        url="../src/Particles/particlesjs-config.json"
         init={particlesInit}
         loaded={particlesLoaded}
       />
