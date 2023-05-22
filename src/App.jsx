@@ -9,13 +9,13 @@ import Projects from "./scenes/Projects";
 import Contact from "./scenes/Contact";
 import Footer from "./scenes/Footer";
 import useMediaQuery from "./hooks/useMediaQuery";
-// import gsap from "gsap";
 import Testimonials from "./scenes/Testimonials";
 import { motion } from "framer-motion";
 import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 function App() {
+  
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
@@ -44,7 +44,7 @@ function App() {
   }, []);
 
   return (
-    <div className="app bg-deep-blue">
+    <div className="app">
       <Particles
         id="tsparticles"
         url="../src/Particles/particlesjs-config.json"

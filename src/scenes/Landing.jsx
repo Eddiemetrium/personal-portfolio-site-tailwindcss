@@ -29,7 +29,7 @@ const logoRef = useRef(null);
           >
             <img
               alt="profile"
-              className="main-img  hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[250px] md:max-w-[400px] rounded-full border-3"
+              className="main-img  hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[250px] md:max-w-[350px] rounded-full border-3"
               src={ProfileImg}
             />
           </div>
