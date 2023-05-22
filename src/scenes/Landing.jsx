@@ -29,14 +29,14 @@ const logoRef = useRef(null);
           >
             <img
               alt="profile"
-              className="main-img  hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px] rounded-full border-3"
+              className="main-img  hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[250px] md:max-w-[400px] rounded-full border-3"
               src={ProfileImg}
             />
           </div>
         ) : (
           <img
             alt="profile"
-            className="z-10 w-full max-w-[200px] md:max-w-[3500px] height-[70px] "
+            className="z-10 w-full max-w-[100px] md:max-w-[2500px] height-[50px] "
             src={ProfileImg}
           />
         )}

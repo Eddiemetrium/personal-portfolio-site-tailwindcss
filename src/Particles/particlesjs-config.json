@@ -9,7 +9,7 @@
     },
     "move": {
       "attract": {
-        "enable": true,
+        "enable": false,
         "distance": 100,
         "rotate": {
           "x": 2000,
@@ -38,7 +38,7 @@
         "width": 100,
         "height": 100
       },
-      "random": false,
+      "random": true,
       "speed": 3,
       "straight": false,
       "trail": {
@@ -65,7 +65,7 @@
     }
   },
   "background": {
-    "color": "#000"
+    "color": ""
   },
   "fullScreen": {
     "zIndex": -1
