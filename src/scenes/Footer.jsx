@@ -14,7 +14,7 @@ const Footer = () => {
       { y: -10, duration: 4,opacity:1, ease: "bounce", scrollTrigger: { trigger: el }})}, []);
 
   return (
-    <footer  className="h-20 bg-blue py-6 ">
+    <footer className="h-20 bg-deep-blue py-6 ">
       <div ref={scrollRef} className="w-10/12 mx-auto">
         <SocialMediaIcons />
         <div className="md:flex justify-center md:justify-between text-center ">

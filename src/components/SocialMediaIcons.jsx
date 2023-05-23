@@ -1,3 +1,4 @@
+import Github from "../assets/github-11-32.png"
 const SocialMediaIcons = () => {
   return (
     <div className="flex justify-center md:justify-start my-10 gap-7">
@@ -35,10 +36,11 @@ const SocialMediaIcons = () => {
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
-        href="https://www.github.com/eddiemetrium"
+href="https://www.github.com/eddiemetrium"
         target="_blank"
         rel="noreferrer"
       >
+        <img src={Github}  alt="github-link"/>
       </a>
     </div>
   );

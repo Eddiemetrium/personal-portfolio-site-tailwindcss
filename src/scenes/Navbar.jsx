@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQuery";
-import EdLogo from "../assets/20210727_220621-min.png";
+import EdLogo from "../assets/20210723_144041-min.png";
 
 const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase();
@@ -34,7 +34,7 @@ useEffect(() => {
 
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isDesktop = useMediaQuery("(min-width: 68px)");
-  const navbarBackground = isTopOfPage ? "" : "bg-blue";
+  const navbarBackground = isTopOfPage ? "" : "bg-deep-blue";
 
   return (
     <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-4`}>
