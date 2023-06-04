@@ -57,13 +57,10 @@ const logoRef = useRef(null);
         >
           <p
             ref={logoRef}
-            className="glow text-5xl font-playfair z-10 text-center md:text-start "
+            className="glow text-base sm:text-3xl lg:text-5xl font-playfair z-10 text-center md:text-start w-6"
           >
             Edwin~
-            <span
-              className="xs:relative xs: xs:font-semibold z-20 
-              before:absolute before:-left-[20px] before:-top-[70px] before:z-[-1]"
-            >
+            <span className="relative font-semibold z-20 xs:absolute xs:-left-[-20px] xs:-top-[-70px] xs:z-[-1]">
               Munene.
             </span>
           </p>

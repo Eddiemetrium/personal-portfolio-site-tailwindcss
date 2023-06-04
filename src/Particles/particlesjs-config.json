@@ -1,7 +1,7 @@
 {
   "particles": {
     "color": {
-      "value": "#FF0000",
+      "value": "#fbdb04",
       "animation": {
         "enable": true,
         "speed": 10
@@ -9,7 +9,7 @@
     },
     "move": {
       "attract": {
-        "enable": false,
+        "enable": true,
         "distance": 100,
         "rotate": {
           "x": 2000,
@@ -22,25 +22,21 @@
         "default": "destroy"
       },
       "path": {
-        "clamp": false,
+        "clamp": true,
         "enable": true,
         "delay": {
           "value": 0
         },
-        "generator": "polygonPathGenerator",
-        "options": {
-          "sides": 6,
-          "turnSteps": 30,
-          "angle": 30
+        "generator": {
+          "type": "polygon",
+          "config": {
+            "sides": 6
+          }
         }
-      },"image": {
-        "src": "https://particles.js.org/images/GitHub-Mark-120px-plus.png",
-        "width": 100,
-        "height": 100
       },
       "random": true,
       "speed": 3,
-      "straight": false,
+      "straight": true,
       "trail": {
         "fillColor": "#000",
         "length": 20,
@@ -55,17 +51,17 @@
       "value": 0
     },
     "opacity": {
-      "value": 1
+      "value": 0.5
     },
     "shape": {
       "type": "circle"
     },
     "size": {
-      "value": 2
+      "value": 4
     }
   },
   "background": {
-    "color": ""
+    "color": "#3c5570"
   },
   "fullScreen": {
     "zIndex": -1

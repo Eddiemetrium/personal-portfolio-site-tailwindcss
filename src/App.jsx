@@ -14,6 +14,8 @@ import { motion } from "framer-motion";
 import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
+import { polygonPathName, loadPolygonPath } from "tsparticles-path-polygon";
+
 function App() {
   
   const particlesInit = useCallback(async (engine) => {
