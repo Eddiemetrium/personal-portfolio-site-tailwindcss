@@ -9,7 +9,7 @@
     },
     "move": {
       "attract": {
-        "enable": true,
+        "enable": false,
         "distance": 100,
         "rotate": {
           "x": 2000,
@@ -22,7 +22,7 @@
         "default": "destroy"
       },
       "path": {
-        "clamp": true,
+        "clamp": false,
         "enable": true,
         "delay": {
           "value": 0

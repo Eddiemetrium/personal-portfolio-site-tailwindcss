@@ -1,6 +1,8 @@
 import {  useEffect, useRef } from "react";
 import gsap from "gsap";
-import Typed from "react-typed";
+// import Typed from "react-typed";
+import React from "react";
+import Typed from "typed.js";
 import SocialMediaIcons from "../components/SocialMediaIcons";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
@@ -8,11 +10,31 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import ProfileImg from "../assets/photo_2023-03-27_20-50-09.jpg";
 
 const Landing = ({ setSelectedPage }) => {
-const logoRef = useRef(null);
+  // Create reference to store the DOM element containing the animation
+  const ty = useRef(null);
+
+  useEffect(() => {
+   const typed = new Typed(ty.current, {
+     strings: ["Web Development", "React Js", "API", "Animations"],
+     loop: true,
+     loopCount: Infinity,
+     startDelay: 300,
+     typeSpeed: 100,
+     backSpeed: 100,
+     backDelay: 100,
+   });
+
+   return () => {
+     // Destroy Typed instance during cleanup to stop animation
+     typed.destroy();
+   };
+ }, []);
+
+  const logoRef = useRef(null);
   useEffect(() => {
     const el = logoRef.current;
-    gsap.from(el, { rotation: 0, duration: 6});
-    gsap.to(el, { rotation: 360, duration: 6, ease: "elastic" });
+    gsap.from(el, { rotation: 0, duration: 8 });
+    gsap.to(el, { rotation: 360, duration: 9, ease: "elastic" });
   }, []);
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
@@ -59,29 +81,16 @@ const logoRef = useRef(null);
             ref={logoRef}
             className="glow text-base sm:text-3xl lg:text-5xl font-playfair z-10 text-center md:text-start w-6"
           >
-            Edwin~
+            Edwin
             <span className="relative font-semibold z-20 xs:absolute xs:-left-[-20px] xs:-top-[-70px] xs:z-[-1]">
-              Munene.
+              Munene()Dev
             </span>
           </p>
 
           <p className="mt-12 mb-5 text-sm text-center md:text-start xs:text-start">
-            <Typed
-              className="text-xl text-bold"
-              strings={[
-                "JavaScript",
-                "ReactJS",
-                "NextJS",
-                "Api Integration",
-                "Git",
-                "CSS3",
-                "TailwindCSS",
-                "GSAP Animations",
-              ]}
-              typeSpeed={60}
-              backSpeed={50}
-              loop
-            />
+
+            <span className="text-xl text-bold" ref={ty} />
+            
           </p>
         </motion.div>
 

@@ -23,7 +23,7 @@ const MySkills = () => {
             MY <span className="text-red">SKILLS</span>
           </p>
           <LineGradient width="w-1/3" />
-          <p className="mt-10 mb-7 text-lg">
+          <p className="mt-10 mb-7 text-xl">
             I am front-end web developer with an interest in cyber security. I
             am proficient in react js, next js, git, vanila css, mongo db, tailwind css,
             Api integration and windows software solutions.

@@ -103,8 +103,6 @@ function App() {
           <br />
           <br />
           <br />
-          <br />
-          <br />
           <Projects />
         </motion.div>
       </div>

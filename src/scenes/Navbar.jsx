@@ -24,13 +24,13 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
   useEffect(() => {
     const el = logoRef.current;
-    gsap.from(el, { x: 100, rotation: 180, opacity: 0.0, duration: 1 });
+    gsap.from(el, { x:350, rotation: 360, opacity: 0.5, duration: 2 });
     gsap.to(el, {
-      x: -30,
+      x: -20,
       rotation: 0,
       opacity: 1,
-      duration: 3,
-      ease: "bounce({ strength: 2})",
+      duration: 4,
+      ease: "bounce({ strength: 4})",
     });
   }, []);
 
@@ -51,7 +51,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
         {/* DESKTOP NAV */}
         {isDesktop && (
-          <div className="flex justify-between gap-16 font-opensans text-sm font-semibold">
+          <div className="flex justify-between gap-16 font-opensans text-md font-semibold">
             <Link
               page="Home"
               selectedPage={selectedPage}

@@ -80,8 +80,8 @@ const Projects = () => {
         >
           {/* ROW 1 */}
           <div
-            className="flex justify-center text-center items-center p-10 bg-yellow
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold text-deep-blue"
+            className="flex justify-center text-center items-center p-10 bg-yellow mb-2
+              max-w-[500px] max-h-[400px] text-2xl font-playfair font-semibold text-deep-blue "
           >
             BEAUTIFUL USER INTERFACES
           </div>
@@ -294,7 +294,7 @@ const Projects = () => {
 
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
+              max-w-[500px] max-h-[400px] text-2xl font-playfair font-semibold"
           >
             SMOOTH USER EXPERIENCE
           </div>
