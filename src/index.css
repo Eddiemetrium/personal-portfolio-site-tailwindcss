@@ -86,7 +86,7 @@ max-width: 4rem !important;
 }
 .glow{
  font-size:3rem;
-  color:white;
+  color:rgba(255, 255, 255, 0.898);
   font-family: 'Merienda', cursive;
   animation-name:glow;
   animation-duration:1s;
