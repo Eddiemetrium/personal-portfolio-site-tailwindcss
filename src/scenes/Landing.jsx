@@ -51,14 +51,14 @@ const Landing = ({ setSelectedPage }) => {
           >
             <img
               alt="profile"
-              className="main-img  hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[250px] md:max-w-[350px] rounded-full border-3"
+              className="main-img  hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[250px] md:max-w-[350px] rounded-full border-3 shake"
               src={ProfileImg}
             />
           </div>
         ) : (
           <img
             alt="profile"
-            className="z-10 w-full max-w-[100px] md:max-w-[2500px] height-[50px] "
+            className=" z-10 w-full max-w-[100px] md:max-w-[2500px] height-[50px] "
             src={ProfileImg}
           />
         )}
@@ -79,7 +79,7 @@ const Landing = ({ setSelectedPage }) => {
         >
           <p
             ref={logoRef}
-            className="glow text-base sm:text-3xl lg:text-5xl font-playfair z-10 text-center md:text-start w-6"
+            className=" glow text-base sm:text-3xl lg:text-5xl font-playfair z-10 text-center md:text-start w-6 "
           >
             Edwin
             <span className="relative font-semibold z-20 xs:absolute xs:-left-[-20px] xs:-top-[-70px] xs:z-[-1]">
@@ -88,9 +88,7 @@ const Landing = ({ setSelectedPage }) => {
           </p>
 
           <p className="mt-12 mb-5 text-sm text-center md:text-start xs:text-start">
-
             <span className="text-xl text-bold" ref={ty} />
-            
           </p>
         </motion.div>
 

@@ -95,3 +95,19 @@ max-width: 4rem !important;
   animation-direction:alternate;
 }
 
+@keyframes shake {
+    0%,100% {
+        transform: rotate(0deg)
+    }
+
+    20%,60% {
+        transform: rotate(6deg)
+    }
+
+    40%,80% {
+        transform: rotate(-6deg)
+    }
+  }
+ .shake{
+  animation: shake 2s linear infinite;
+ }
