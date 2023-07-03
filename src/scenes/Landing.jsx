@@ -108,7 +108,7 @@ const Landing = ({ setSelectedPage }) => {
             className="resume bg-yellow text-deep-blue rounded-sm py-3 px-7 font-semibold
               hover:bg-blue hover:text-white transition duration-500"
             onClick={() => setSelectedPage("contact")}
-            href="https://drive.google.com/file/d/1Hx66zdUCLVoVhmdc9-aOi3NPR6kJ4u3p/view?usp=sharing"
+            href="https://drive.google.com/file/d/1Hx66zdUCLVoVhmdc9-aOi3NPR6kJ4u3p/view?usp=drive_link"
           >
             <span class="shine-line"></span>
             <span class="shine-right"></span>

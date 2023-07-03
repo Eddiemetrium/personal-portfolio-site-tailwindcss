@@ -11,24 +11,10 @@ import Footer from "./scenes/Footer";
 import useMediaQuery from "./hooks/useMediaQuery";
 import Testimonials from "./scenes/Testimonials";
 import { motion } from "framer-motion";
-import { useCallback } from "react";
-import Particles from "react-particles";
-import { loadFull } from "tsparticles";
-import { polygonPathName, loadPolygonPath } from "tsparticles-path-polygon";
 
 function App() {
   
-  const particlesInit = useCallback(async (engine) => {
-    console.log(engine);
-    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
-    await loadFull(engine);
-  }, []);
 
-  const particlesLoaded = useCallback(async (container) => {
-    await console.log(container);
-  }, []);
   const [selectedPage, setSelectedPage] = useState("home");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
   const isDesktop = useMediaQuery("(min-width: 1060px)");
@@ -47,12 +33,6 @@ function App() {
 
   return (
     <div className="app">
-      <Particles
-        id="tsparticles"
-        url="../src/Particles/particlesjs-config.json"
-        init={particlesInit}
-        loaded={particlesLoaded}
-      />
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
@@ -74,8 +54,7 @@ function App() {
         </motion.div>
       </div>
       <br />
-      <br />
-      <br />
+      
 
       <LineGradient />
       <div className="w-5/6 mx-auto md:h-full ">
@@ -94,13 +73,7 @@ function App() {
           amount="all"
           onViewportEnter={() => setSelectedPage("projects")}
         >
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
+    
           <br />
           <br />
           <Projects />
@@ -127,11 +100,7 @@ function App() {
           <br />
           <br />
           <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
+        
           <Contact />
         </motion.div>
         <Footer />

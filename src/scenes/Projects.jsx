@@ -5,7 +5,8 @@ import Project2 from "../assets/Project2.png";
 import Project3 from "../assets/Project4.png";
 import Project5 from "../assets/Project5.png";
 import Project6 from "../assets/Project6.png";
-
+import Project7 from 
+"../assets/screenshot-1.jpeg";
 
 const container = {
   hidden: {},
@@ -249,48 +250,40 @@ const Projects = () => {
             </div>
           </div>
           {/* ROW 3 */}
-          <div className="relative">
-            <div>
-              <img src={"../assets/project-1.jpeg"} alt={Project} />
-              <div className="absolute inset-0 bg-black opacity-0 hover:opacity-60 flex flex-col  items-center justify-between">
-                <p className="text-white text-sm mt-5 text-center">
-                  Three line description
-                </p>
-                <div className="flex justify-between  mb-5">
-                  <a href="#">
-                    <button className="bg-white text-black px-4 py-2 rounded-lg inline-block">
-                      Go to Site
-                    </button>
-                  </a>
+      
+          <div class="rounded overflow-hidden shadow-lg">
+            <img class="w-full" src={Project7} alt="Space exploration site" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-center text-xl mb-2">
+                Space Explorae Website
+              </div>
+              <p class="text-gray-700 text-base">
+                Space explore website that has responsive design from the
+                frontend mentor challenge site. All device responsive.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <div className="flex justify-between  mt-2">
+                <a
+                  href="https://space-exploration-frontend-mentor.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="bg-white underline text-black px-4 py-2 rounded-lg inline-block hover:text-orange-700">
+                    Go to Site
+                  </button>
+                </a>
 
-                  <a href="#">
-                    <p className="text-blue px-4 pl-2 underline">Github Link</p>
-                  </a>
-                </div>
+                <a
+                  href="https://github.com/Eddiemetrium/space-exploration-frontend-mentor"
+                  rel="noreferrer"
+                >
+                  <p className="text-blue px-4 pl-2 underline">Github Link</p>
+                </a>
               </div>
             </div>
           </div>
-          <div className="relative">
-            <div>
-              <img src={"../assets/project-1.jpeg"} alt={Project} />
-              <div className="absolute inset-0 bg-black opacity-0 hover:opacity-60 flex flex-col  items-center justify-between">
-                <p className="text-white text-sm mt-5 text-center">
-                  Three line description
-                </p>
-                <div className="flex justify-between  mb-5">
-                  <a href="#">
-                    <button className="bg-white text-black px-4 py-2 rounded-lg inline-block">
-                      Go to Site
-                    </button>
-                  </a>
-
-                  <a href="#">
-                    <p className="text-blue px-4 pl-2 underline">Github Link</p>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+       
 
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
