@@ -9,104 +9,186 @@ body,
 #root,
 .app {
   height: 100%;
-  color:  text-white;
+  background-image: url(./assets/a6b6d901-c119-4f7a-a5aa-6a51244b7f51.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: text-white;
 }
-@keyframes glow{
-  from{text-shadow:0px 0px 5px #fffefeb4,0px 0px 5px #614ad3;}
-  to{text-shadow:0px 0px 20px #fffefeb4,0px 0px 15px #614ad3;}
+@keyframes glow {
+  from {
+    text-shadow: 0px 0px 5px #fffefeb4, 0px 0px 5px #614ad3;
+  }
+  to {
+    text-shadow: 0px 0px 20px #fffefeb4, 0px 0px 15px #614ad3;
+  }
 }
 @keyframes animate1 {
-    0% {
-        transform: translateX(-10%);
-    }
-    100% {
-        transform: translateX(130%);
-    }
+  0% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(130%);
+  }
 }
 @keyframes animate2 {
-    0% {
-        transform: translateX(140%);
-    }
-    100% {
-        transform: translateX(-5%);
-    }
+  0% {
+    transform: translateX(140%);
+  }
+  100% {
+    transform: translateX(-5%);
+  }
 }
 @keyframes animate3 {
-    0% {
-        transform: translateY(-4%);
-    }
-    100% {
-        transform: translateY(110%);
-    }
-}@keyframes animate4 {
-    0% {
-        transform: translateY(110%);
-    }
-    100% {
-        transform: translateY(-5%);
-    }
+  0% {
+    transform: translateY(-4%);
+  }
+  100% {
+    transform: translateY(110%);
+  }
 }
-
-
-.nav-logo{
-max-width: 4rem !important;
+@keyframes animate4 {
+  0% {
+    transform: translateY(110%);
+  }
+  100% {
+    transform: translateY(-5%);
+  }
 }
-.main-img{
+/* .{} */
+.nav-logo {
+  max-width: 4rem !important;
+}
+.main-img {
   max-width: 22rem;
   max-height: 18rem;
 }
 .resume {
   position: relative;
 }
-.text{
-    color: black !important;
+.text {
+  color: black !important;
 }
 .shine-line {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 5px;
   width: 100%;
   height: 3px;
   background: linear-gradient(to right, rgb(0 0 0 / 0%), #0400ff);
   animation: animate1 2s linear infinite;
-      animation-delay: 50ms;
+  animation-delay: 50ms;
 
+  z-index: 2;
+}
+.shine-left {
+  position: absolute;
+  top: -3px;
+  left: -1px;
+  width: 3.5px;
+  height: 50%;
+  background: linear-gradient(to left, rgb(0 0 0 / 0%), #0400ff);
+  animation: animate3 1s linear infinite;
+  z-index: 2;
+}
+.shine-right {
+  position: absolute;
+ top: -1px;
+    right: -155px;
+    width: 3.5px;
+    height: 50%;
+  background: linear-gradient(to right, #0400ff, rgb(0 0 0 / 0%));
+  animation: animate4 1s linear infinite;
   z-index: 2;
 }
 .shine {
   position: absolute;
   top: 48px;
-  right: 0;
+  right: -5px;
   width: 100%;
   height: 3px;
-  background: linear-gradient(to right, #0400ff,rgb(0 0 0 / 0%) );
-    animation: animate2 2s linear infinite;
-      animation-delay: 90ms;
+  background: linear-gradient(to right, #0400ff, rgb(0 0 0 / 0%));
+  animation: animate2 2s linear infinite;
+  animation-delay: 90ms;
   z-index: 2;
 }
-.glow{
- font-size:2rem;
-  color:rgba(255, 255, 255, 0.898);
-  font-family: 'Merienda', cursive;
-  animation-name:glow;
-  animation-duration:1s;
-  animation-iteration-count:infinite;
-  animation-direction:alternate;
+
+.glow {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.898);
+  font-family: "Merienda", cursive;
+  animation-name: glow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.contact-input {
+  color: black;
 }
 
 @keyframes shake {
-    0%,100% {
-        transform: rotate(0deg)
-    }
-
-    20%,60% {
-        transform: rotate(6deg)
-    }
-
-    40%,80% {
-        transform: rotate(-6deg)
-    }
+  0%,
+  100% {
+    transform: rotate(0deg);
   }
- .shake{
+
+  20%,
+  60% {
+    transform: rotate(6deg);
+  }
+
+  40%,
+  80% {
+    transform: rotate(-6deg);
+  }
+}
+.shake {
   animation: shake 2s linear infinite;
- }
+}
+@media only screen and (max-width: 1000px) {
+  .app {
+    background-image: none;
+  }
+  .shine {
+    display: none;
+  }
+  .shine-line {
+    display: none;
+  }
+  .glow {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .app {
+    background-image: none;
+     background-position: unset; /* Reset background position */
+    background-size: unset; /* Reset background size */
+    background-repeat: unset; /* Reset background repeat */
+  }
+  .projects {
+    margin-top: -25rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .app {
+    background-image: none;
+     background-position: unset; /* Reset background position */
+    background-size: unset; /* Reset background size */
+    background-repeat: unset; /* Reset background repeat */
+  }
+   .projects {
+    margin-top: 3rem;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .app {
+    background-image: none;
+     background-position: unset; /* Reset background position */
+    background-size: unset; /* Reset background size */
+    background-repeat: unset; /* Reset background repeat */
+  }
+   .projects {
+    margin-top: -25rem;
+  }
+}

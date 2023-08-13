@@ -43,7 +43,7 @@ const Projects = () => {
   //  const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
   //   bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
   return (
-    <section id="projects" className="pt-48 pb-48">
+    <section id="projects" className="pt-48 pb-48  projects">
       {/* HEADINGS */}
       <motion.div
         className="md:w-2/5 mx-auto text-center"
@@ -250,7 +250,7 @@ const Projects = () => {
             </div>
           </div>
           {/* ROW 3 */}
-      
+
           <div class="rounded overflow-hidden shadow-lg">
             <img class="w-full" src={Project7} alt="Space exploration site" />
             <div class="px-6 py-4">
@@ -283,7 +283,6 @@ const Projects = () => {
               </div>
             </div>
           </div>
-       
 
           <div
             className="flex justify-center text-center items-center p-10 bg-blue

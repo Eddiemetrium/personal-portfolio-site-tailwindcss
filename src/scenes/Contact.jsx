@@ -1,8 +1,10 @@
 import LineGradient from "../components/LineGradient";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
+import GetInTouch from "../assets/Get in touch-amico.png";
 
 const Contact = () => {
+
   const {
     register,
     trigger,
@@ -53,7 +55,7 @@ const Contact = () => {
           }}
           className="basis-1/2 flex justify-center"
         >
-          <img src="../assets/contact-image.jpeg" alt="contact" />
+          <img src={GetInTouch} alt="contact" />
         </motion.div>
 
         <motion.div
@@ -74,7 +76,7 @@ const Contact = () => {
             method="POST"
           >
             <input
-              className="w-full bg-blue font-semibold text-black p-3 "
+              className="w-full bg-yellow font-semibold text-black p-3 "
               type="text"
               placeholder="NAME"
               {...register("name", {
@@ -83,14 +85,14 @@ const Contact = () => {
               })}
             />
             {errors.name && (
-              <p className="text-red mt-1">
+              <p className="text-red mt-1 contact-input">
                 {errors.name.type === "required" && "This field is required."}
                 {errors.name.type === "maxLength" && "Max length is 100 char."}
               </p>
             )}
 
             <input
-              className="w-full bg-blue font-semibold text-black p-3 mt-5"
+              className="w-full bg-yellow font-semibold text-red p-3 mt-5 contact-input"
               type="text"
               placeholder="EMAIL"
               {...register("email", {
@@ -99,14 +101,14 @@ const Contact = () => {
               })}
             />
             {errors.email && (
-              <p className="text-red mt-1">
+              <p className="text-black mt-1">
                 {errors.email.type === "required" && "This field is required."}
                 {errors.email.type === "pattern" && "Invalid email address."}
               </p>
             )}
 
             <textarea
-              className="w-full bg-blue font-semibold text-black p-3 mt-5"
+              className="w-full bg-yellow font-semibold text-black p-3 mt-5"
               name="message"
               placeholder="MESSAGE"
               rows="4"
@@ -126,7 +128,7 @@ const Contact = () => {
             )}
 
             <button
-              className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
+              className="p-5 bg-red font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
               type="submit"
             >
               SEND ME A MESSAGE

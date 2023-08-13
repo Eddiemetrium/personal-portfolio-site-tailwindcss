@@ -1,6 +1,5 @@
-import {  useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
-// import Typed from "react-typed";
 import React from "react";
 import Typed from "typed.js";
 import SocialMediaIcons from "../components/SocialMediaIcons";
@@ -10,25 +9,31 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import ProfileImg from "../assets/photo_2023-03-27_20-50-09.jpg";
 
 const Landing = ({ setSelectedPage }) => {
-  // Create reference to store the DOM element containing the animation
   const ty = useRef(null);
 
   useEffect(() => {
-   const typed = new Typed(ty.current, {
-     strings: ["Web Development", "React Js", "API", "Animations"],
-     loop: true,
-     loopCount: Infinity,
-     startDelay: 300,
-     typeSpeed: 100,
-     backSpeed: 100,
-     backDelay: 100,
-   });
+    const typed = new Typed(ty.current, {
+      strings: [
+        "Web Development",
+        "React Js",
+        "API",
+        "JavaScript",
+        "Tailwind CSS",
+        "React Native",
+      ],
+      loop: true,
+      loopCount: Infinity,
+      startDelay: 300,
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 100,
+    });
 
-   return () => {
-     // Destroy Typed instance during cleanup to stop animation
-     typed.destroy();
-   };
- }, []);
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
 
   const logoRef = useRef(null);
   useEffect(() => {
@@ -58,7 +63,8 @@ const Landing = ({ setSelectedPage }) => {
         ) : (
           <img
             alt="profile"
-            className=" z-10 w-full max-w-[100px] md:max-w-[2500px] height-[50px] "
+            className=" z-10 w-full max-w-[80px] md:max-w-[2000px] height-[40px] 
+         shake    rounded-full"
             src={ProfileImg}
           />
         )}
@@ -106,9 +112,10 @@ const Landing = ({ setSelectedPage }) => {
         >
           <AnchorLink
             className="resume bg-yellow text-deep-blue rounded-sm py-3 px-7 font-semibold
-              hover:bg-blue hover:text-white transition duration-500"
+  hover:bg-blue hover:text-white transition duration-500"
             onClick={() => setSelectedPage("contact")}
-            href="https://drive.google.com/file/d/1Hx66zdUCLVoVhmdc9-aOi3NPR6kJ4u3p/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1-8Vocgg7591WlATy8EHX-Iop14w3Uv3s/view?usp=drive_link"
+            target="_blank" // Added target="_blank" attribute
           >
             <span class="shine-line"></span>
             <span class="shine-right"></span>
@@ -116,6 +123,7 @@ const Landing = ({ setSelectedPage }) => {
             <span class="shine-left"></span>
             <span class="shine"></span>
           </AnchorLink>
+
           <AnchorLink
             className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
             onClick={() => setSelectedPage("contact")}

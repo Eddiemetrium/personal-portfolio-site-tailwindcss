@@ -3,6 +3,7 @@ import gsap from "gsap";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQuery";
 import EdLogo from "../assets/20210723_144041-min.png";
+import BlinkImg from "../assets/IMG_20210419_120232-removebg-preview-min.png";
 
 const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase();
@@ -21,6 +22,7 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
 
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const logoRef = useRef(null);
+  const blinkRef = useRef(null);
 
   useEffect(() => {
     const el = logoRef.current;
@@ -38,7 +40,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const navbarBackground = isTopOfPage ? "" : "bg-deep-blue";
 
   return (
-    <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-4`}>
+    <nav className={`${navbarBackground} z-40 w-full fixed top-0 mt-1 py-4`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
         <h4 className="font-playfair text-3xl font-bold">
           <img
@@ -48,7 +50,14 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             src={EdLogo}
           />
         </h4>
-
+        <section>
+          <img
+            ref={blinkRef}
+            className="nav-logo w-5"
+            alt="ed-logo"
+            src={BlinkImg}
+          />
+        </section>
         {/* DESKTOP NAV */}
         {isDesktop && (
           <div className="flex justify-between gap-16 font-opensans text-md font-semibold">
@@ -64,11 +73,6 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             />
             <Link
               page="Projects"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
-            <Link
-              page="Testimonials"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
