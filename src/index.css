@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import "react-alice-carousel/lib/alice-carousel.css";
 
 @tailwind base;
 @tailwind components;
@@ -9,7 +11,7 @@ body,
 #root,
 .app {
   height: 100%;
-  background-image: url(./assets/a6b6d901-c119-4f7a-a5aa-6a51244b7f51.jpg);
+  /* background-image: url(./assets/a6b6d901-c119-4f7a-a5aa-6a51244b7f51.jpg); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -88,17 +90,17 @@ body,
   width: 3.5px;
   height: 50%;
   background: linear-gradient(to left, rgb(0 0 0 / 0%), #0400ff);
-  animation: animate3 1s linear infinite;
+  animation: animate3 2s linear infinite;
   z-index: 2;
 }
 .shine-right {
   position: absolute;
  top: -1px;
-    right: -155px;
+    right: -161px;
     width: 3.5px;
     height: 50%;
   background: linear-gradient(to right, #0400ff, rgb(0 0 0 / 0%));
-  animation: animate4 1s linear infinite;
+  animation: animate4 2s linear infinite;
   z-index: 2;
 }
 .shine {
@@ -112,11 +114,10 @@ body,
   animation-delay: 90ms;
   z-index: 2;
 }
-
 .glow {
-  font-size: 2rem;
-  color: rgba(255, 255, 255, 0.898);
-  font-family: "Merienda", cursive;
+font-size: calc(2vw + 2vh + 2vmin);
+  color: rgba(255, 255, 255, 0.697);
+  font-family: "Tilt Prism", cursive;
   animation-name: glow;
   animation-duration: 1s;
   animation-iteration-count: infinite;
@@ -125,6 +126,12 @@ body,
 .contact-input {
   color: black;
 }
+.yours-custom-class{
+  width: 5rem;
+}
+.projects {
+    margin-top: 50rem;
+  }
 
 @keyframes shake {
   0%,
@@ -146,18 +153,26 @@ body,
   animation: shake 2s linear infinite;
 }
 @media only screen and (max-width: 1000px) {
-  .app {
-    background-image: none;
-  }
-  .shine {
+  /* .app {
+    background-image: url(../src/assets/a6b6d901-c119-4f7a-a5aa-6a51244b7f521.jpg);
+  } */
+  /* .shine {
     display: none;
   }
   .shine-line {
     display: none;
   }
+  .shine-right{
+display: none;
+}
+.shine-left{
+  display: none;
+} */
   .glow {
-    font-size: 1.5rem;
-  }
+font-size: calc(2vw + 2vh + 2vmin) ;
+  font-family: "Tilt Prism", cursive;
+
+}
 }
 @media only screen and (max-width: 700px) {
   .app {
@@ -169,6 +184,11 @@ body,
   .projects {
     margin-top: -25rem;
   }
+   .glow {
+font-size: calc(2vw + 2vh + 2vmin) ;
+  font-family: "Tilt Prism", cursive;
+
+}
 }
 @media only screen and (max-width: 500px) {
   .app {

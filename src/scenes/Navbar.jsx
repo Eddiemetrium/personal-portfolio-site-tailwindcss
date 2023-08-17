@@ -3,7 +3,7 @@ import gsap from "gsap";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQuery";
 import EdLogo from "../assets/20210723_144041-min.png";
-import BlinkImg from "../assets/IMG_20210419_120232-removebg-preview-min.png";
+import BlinkImg from "../assets/81cda3b52dff053a16ceadea9a5259d20e1cb513.gif";
 
 const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase();

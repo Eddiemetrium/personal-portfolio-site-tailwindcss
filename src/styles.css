@@ -101,3 +101,18 @@ display: flex;
     animation: animate4 2s linear infinite;
   z-index: 2;
 }
+.alice-carousel {
+  background-color: rgba(0, 255, 255, 0.197);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    position: relative;
+    width: 50% !important;
+    margin: auto;
+    direction: ltr;
+    margin-top: 9rem;
+    margin-bottom: 5rem;
+}
+.alice-carousel__stage-item{
+  padding-left: 8rem;
+}

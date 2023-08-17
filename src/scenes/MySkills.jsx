@@ -1,3 +1,4 @@
+import Gallery from "../components/Gallery";
 import LineGradient from "../components/LineGradient";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
@@ -5,7 +6,7 @@ import { motion } from "framer-motion";
 const MySkills = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
-    <section id="skills" className="pt-10 pb-28 mb-6">
+    <section id="skills" className="pt-10 pb-35 mb-10">
       {/* HEADER AND IMAGE SECTION */}
       <div className="md:flex md:justify-between md:gap-16 mt-32">
         <motion.div
@@ -19,14 +20,15 @@ const MySkills = () => {
             visible: { opacity: 1, x: 0 },
           }}
         >
+          <Gallery />
           <p className="font-playfair font-semibold text-4xl mb-5">
             MY <span className="text-red">SKILLS</span>
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7 text-xl">
             I am front-end web developer with an interest in cyber security. I
-            am proficient in react js, next js, git, vanila css, mongo db, tailwind css,
-            Api integration and windows software solutions.
+            am proficient in react js, next js, git, vanila css, mongo db,
+            tailwind css, Api integration and windows software solutions.
           </p>
         </motion.div>
 
@@ -96,7 +98,8 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Innovation is what we need inorder to develop new technologies, products and services
+            Innovation is what we need inorder to develop new technologies,
+            products and services
           </p>
         </motion.div>
         {/* IMAGINATIVE */}

@@ -43,7 +43,7 @@ const Projects = () => {
   //  const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
   //   bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
   return (
-    <section id="projects" className="pt-48 pb-48  projects">
+    <section id="projects" className="pt-60 pb-48  projects">
       {/* HEADINGS */}
       <motion.div
         className="md:w-2/5 mx-auto text-center"

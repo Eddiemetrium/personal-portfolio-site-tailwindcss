@@ -18,6 +18,8 @@ function App() {
   const [selectedPage, setSelectedPage] = useState("home");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
   const isDesktop = useMediaQuery("(min-width: 1060px)");
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,8 +33,30 @@ function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const removeBackgroundImage = windowWidth < 1000;
+
   return (
-    <div className="app">
+    <div
+      className="app"
+      style={{
+        backgroundImage: removeBackgroundImage
+          ? "none"
+          : "url(src/assets/desktop-background.jpg)",
+      }}
+    >
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
@@ -72,10 +96,7 @@ function App() {
           amount="all"
           onViewportEnter={() => setSelectedPage("projects")}
         >
-         
-
-            <Projects />
-
+          <Projects />
         </motion.div>
       </div>
       {/* <LineGradient />

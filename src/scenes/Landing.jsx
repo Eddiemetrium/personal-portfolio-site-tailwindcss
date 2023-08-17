@@ -17,6 +17,7 @@ const Landing = ({ setSelectedPage }) => {
         "Web Development",
         "React Js",
         "API",
+        "Next Js",
         "JavaScript",
         "Tailwind CSS",
         "React Native",
