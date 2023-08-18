@@ -11,7 +11,7 @@ body,
 #root,
 .app {
   height: 100%;
-  /* background-image: url(./assets/a6b6d901-c119-4f7a-a5aa-6a51244b7f51.jpg); */
+  background-image: url(./assets/a6b6d901-c119-4f7a-a5aa-6a51244b7f51.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -130,7 +130,7 @@ font-size: calc(2vw + 2vh + 2vmin);
   width: 5rem;
 }
 .projects {
-    margin-top: 50rem;
+    margin-top: 42rem;
   }
 
 @keyframes shake {
