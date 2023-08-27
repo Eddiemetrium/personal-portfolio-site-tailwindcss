@@ -11,7 +11,7 @@ body,
 #root,
 .app {
   height: 100%;
-  background-image: url(./assets/a6b6d901-c119-4f7a-a5aa-6a51244b7f51.jpg);
+  background-image: url(./assets/a6b6d901-c119-4f7a-a5aa-6a51244b7f51.jpg) !;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -96,7 +96,7 @@ body,
 .shine-right {
   position: absolute;
  top: -1px;
-    right: -161px;
+    right: -155px;
     width: 3.5px;
     height: 50%;
   background: linear-gradient(to right, #0400ff, rgb(0 0 0 / 0%));
@@ -153,21 +153,7 @@ font-size: calc(2vw + 2vh + 2vmin);
   animation: shake 2s linear infinite;
 }
 @media only screen and (max-width: 1000px) {
-  /* .app {
-    background-image: url(../src/assets/a6b6d901-c119-4f7a-a5aa-6a51244b7f521.jpg);
-  } */
-  /* .shine {
-    display: none;
-  }
-  .shine-line {
-    display: none;
-  }
-  .shine-right{
-display: none;
-}
-.shine-left{
-  display: none;
-} */
+
   .glow {
 font-size: calc(2vw + 2vh + 2vmin) ;
   font-family: "Tilt Prism", cursive;

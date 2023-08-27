@@ -82,12 +82,11 @@ max-width: 4rem !important;
 position: absolute;
   top: 0;
   bottom: 0;
-  right: 112px;
+  right: -155px;
  height: 50%;
   width: 5px;
   background: linear-gradient(to right, #0400ff,rgb(0 0 0 / 0%) );
     animation: animate3 2s linear infinite; 
-
   z-index: 2;
 }
 .shine-left{
