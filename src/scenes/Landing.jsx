@@ -118,11 +118,9 @@ const Landing = ({ setSelectedPage }) => {
             href="https://drive.google.com/file/d/1-8Vocgg7591WlATy8EHX-Iop14w3Uv3s/view?usp=drive_link"
             target="_blank" // Added target="_blank" attribute
           >
-            <span class="shine-line"></span>
-            <span class="shine-right"></span>
+            
             Resume
-            <span class="shine-left"></span>
-            <span class="shine"></span>
+           
           </AnchorLink>
 
           <AnchorLink
