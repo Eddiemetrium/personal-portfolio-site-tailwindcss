@@ -65,7 +65,7 @@ const Landing = ({ setSelectedPage }) => {
           <img
             alt="profile"
             className=" z-10 w-full max-w-[80px] md:max-w-[2000px] height-[40px] 
-         shake    rounded-full"
+             rounded-full"
             src={ProfileImg}
           />
         )}
