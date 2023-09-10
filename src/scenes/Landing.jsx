@@ -90,8 +90,9 @@ const Landing = ({ setSelectedPage }) => {
           >
             Edwin
             <span className="relative font-semibold z-20 xs:absolute xs:-left-[-20px] xs:-top-[-70px] xs:z-[-1]">
-              Munene()Dev
+              Munene()
             </span>
+            <span>Dev</span>
           </p>
 
           <p className="mt-12 mb-5 text-sm text-center md:text-start xs:text-start">
@@ -118,9 +119,7 @@ const Landing = ({ setSelectedPage }) => {
             href="https://drive.google.com/file/d/1-8Vocgg7591WlATy8EHX-Iop14w3Uv3s/view?usp=drive_link"
             target="_blank" // Added target="_blank" attribute
           >
-            
             Resume
-           
           </AnchorLink>
 
           <AnchorLink

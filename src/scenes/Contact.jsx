@@ -131,7 +131,7 @@ const Contact = () => {
               className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-blue hover:text-white transition duration-500"
               type="submit"
             >
-              SEND ME A MESSAGE
+              SEND ME THAT MESSAGE
             </button>
           </form>
         </motion.div>
