@@ -3,7 +3,6 @@ import gsap from "gsap";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQuery";
 import EdLogo from "../assets/20210723_144041-min.png";
-import BlinkImg from "../assets/81cda3b52dff053a16ceadea9a5259d20e1cb513.gif";
 
 const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase();
@@ -22,7 +21,6 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
 
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const logoRef = useRef(null);
-  const blinkRef = useRef(null);
 
   useEffect(() => {
     const el = logoRef.current;
@@ -52,12 +50,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
           />
         </h4>
         <section>
-          <img
-            ref={blinkRef}
-            className="nav-logo w-5"
-            alt="ed-logo"
-            src={BlinkImg}
-          />
+
         </section>
         {/* DESKTOP NAV */}
         {isDesktop && (

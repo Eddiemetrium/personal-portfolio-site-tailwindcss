@@ -93,7 +93,7 @@ const Projects = () => {
                   rel="noreferrer"
                 >
                   <button className="bg-white underline text-black px-4 py-2 rounded-lg inline-block hover:text-orange-700 site-go">
-                    Go to Site
+                    Site
                   </button>
                 </a>
 
@@ -103,7 +103,7 @@ const Projects = () => {
                   rel="noreferrer"
                 >
                   <p className="text-blue px-4 pl-2 underline github-link">
-                    Github Link
+                    Github 
                   </p>
                 </a>
               </div>
@@ -131,7 +131,7 @@ const Projects = () => {
                   rel="noreferrer"
                 >
                   <button className="bg-white underline text-black px-4 py-2 rounded-lg inline-block hover:text-orange-700 site-go">
-                    Go to Site
+                    Site
                   </button>
                 </a>
 
@@ -140,7 +140,7 @@ const Projects = () => {
                   rel="noreferrer"
                 >
                   <p className="text-blue px-4 pl-2 underline github-link">
-                    Github Link
+                    Github
                   </p>
                 </a>
               </div>
@@ -168,7 +168,7 @@ const Projects = () => {
                   rel="noreferrer"
                 >
                   <button className="bg-white underline text-black px-4 py-2 rounded-lg inline-block hover:text-orange-700 site-go">
-                    Go to Site
+                    Site
                   </button>
                 </a>
 
@@ -177,7 +177,7 @@ const Projects = () => {
                   rel="noreferrer"
                 >
                   <p className="text-blue px-4 pl-2 underline github-link">
-                    Github Link
+                    Github
                   </p>
                 </a>
               </div>
