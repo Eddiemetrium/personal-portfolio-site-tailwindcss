@@ -24,7 +24,7 @@ const Landing = ({ setSelectedPage }) => {
       ],
       loop: true,
       loopCount: Infinity,
-      startDelay: 300,
+      startDelay: 200,
       typeSpeed: 100,
       backSpeed: 100,
       backDelay: 100,
@@ -112,16 +112,15 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <AnchorLink
+          <a
             className="resume bg-yellow text-deep-blue rounded-sm py-3 px-7 font-semibold
   hover:bg-blue hover:text-white transition duration-500"
             onClick={() => setSelectedPage("contact")}
-            href="https://drive.google.com/file/d/1-8Vocgg7591WlATy8EHX-Iop14w3Uv3s/view?usp=drive_link"
-            target="_blank" // Added target="_blank" attribute
+            href="https://drive.google.com/file/d/1ZozZlyoJRDUJrjPflDLShuTCfXXjEWqS/view?usp=sharing"
+            target="_blank" 
           >
             Resume
-          </AnchorLink>
-
+          </a>
           <AnchorLink
             className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
             onClick={() => setSelectedPage("contact")}

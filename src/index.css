@@ -203,6 +203,14 @@ body,
 .projects {
   margin-top: 42rem;
 }
+/* Cursor */
+.typed-cursor {
+color: rgba(0, 255, 255, 0);
+}
+
+/* If fade out option is set */
+.typed-fade-out {
+}
 
 @keyframes shake {
   0%,
