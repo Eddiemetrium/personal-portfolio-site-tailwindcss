@@ -16,8 +16,8 @@ const Landing = ({ setSelectedPage }) => {
       strings: [
         "Web Development",
         "React Js",
-        "API",
         "Next Js",
+        "API",
         "JavaScript",
         "Tailwind CSS",
         "React Native",
@@ -57,7 +57,7 @@ const Landing = ({ setSelectedPage }) => {
           >
             <img
               alt="profile"
-              className="main-img  hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[250px] md:max-w-[350px] rounded-full border-3 shake"
+              className="main-img  hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[250px] md:max-w-[350px] rounded-full border-3"
               src={ProfileImg}
             />
           </div>
