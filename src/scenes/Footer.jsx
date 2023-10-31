@@ -5,6 +5,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const Footer = () => {
+    const year = new Date().getFullYear();
+
   const scrollRef = useRef(null);
   useEffect(() => {
     const el = scrollRef.current;
@@ -22,7 +24,7 @@ const Footer = () => {
             Edwin Munene
           </p>
           <p className="font-playfair text-md text-blue">
-            ©2023 Munene. All Rights Reserved.
+            © {year} Munene. All Rights Reserved.
           </p>
         </div>
       </div>

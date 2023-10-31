@@ -84,13 +84,29 @@ const Contact = () => {
                 maxLength: 100,
               })}
             />
+
             {errors.name && (
               <p className="text-red mt-1 contact-input">
                 {errors.name.type === "required" && "This field is required."}
                 {errors.name.type === "maxLength" && "Max length is 100 char."}
               </p>
             )}
-
+            <input
+            style={{marginTop:"r1em"}}
+              className="w-full bg-white font-semibold text-black p-3 contact-input "
+              type="text"
+              placeholder="SUBJECT"
+              {...register("subject", {
+                required: true,
+                maxLength: 100,
+              })}
+            />
+            {errors.email && (
+              <p className="text-black mt-1">
+                {errors.email.type === "required" && "This field is required."}
+                {errors.email.type === "pattern" && "Invalid email address."}
+              </p>
+            )}
             <input
               className="w-full bg-white font-semibold text-black p-3 mt-5 contact-input"
               type="text"
