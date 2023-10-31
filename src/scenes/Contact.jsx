@@ -92,7 +92,7 @@ const Contact = () => {
               </p>
             )}
             <input
-            style={{marginTop:"r1em"}}
+            style={{marginTop:"1rem"}}
               className="w-full bg-white font-semibold text-black p-3 contact-input "
               type="text"
               placeholder="SUBJECT"
