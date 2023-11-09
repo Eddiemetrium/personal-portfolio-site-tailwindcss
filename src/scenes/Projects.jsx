@@ -1,9 +1,8 @@
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
-import Project1 from "../assets/Project1.png"
-import Project6 from "../assets/Project6.png";
-import Project7 from 
-"../assets/screenshot-1.jpeg";
+import Project1 from "../assets/Project1.png";
+import Project6 from "../assets/Screenshot from 2023-11-06 06-39-09.png";
+import Project7 from "../assets/screenshot-1.jpeg";
 
 const container = {
   hidden: {},
@@ -28,9 +27,7 @@ const Project = ({ title }) => {
     <motion.div variants={projectVariant} className="relative">
       <div className={overlayStyles}>
         <p className="text-2xl font-playfair">{title}</p>
-        <p className="mt-7">
-          
-        </p>
+        <p className="mt-7"></p>
       </div>
     </motion.div>
   );
@@ -74,112 +71,134 @@ const Projects = () => {
           viewport={{ once: true, amount: 0.2 }}
         >
           {/* Project 1 */}
-
-          <div class="rounded overflow-hidden shadow-lg">
-            <img class="w-full" src={Project1} alt="evo gym" />
-            <div class="px-6 py-4">
-              <div class="font-bold text-center text-xl mb-2">Evo Gym</div>
-              <p class="text-gray-700 text-base">
-                Gym website built with typescript, framer motion animation, form
-                submit email working in real time and tailwind css. Mobile
-                responsive.
-              </p>
+          <div class="rounded overflow-hidden shadow-lg mt-5 flex flex-col  justify-between items-center">
+            <div class="w-2/3 sm:w-full ">
+              <img
+                class="w-full h-auto sm:h-full border-b border-solid border-[#6f9ce061] focus:outline-none focus:border-b-[#7393c361] "
+                src={Project7}
+                alt="Space exploration site"
+              />
             </div>
-            <div class="px-6 pt-4 pb-2">
-              <div className="flex justify-between  mt-2">
-                <a
-                  href="https://typescript-react-fitness-application.vercel.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button className="bg-white underline text-black px-4 py-2 rounded-lg inline-block hover:text-orange-700 site-go">
-                    Site
-                  </button>
-                </a>
-
-                <a
-                  href="https://github.com/Eddiemetrium/typescript-react-fitness-application"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <p className="text-blue px-4 pl-2 underline github-link">
-                    Github 
-                  </p>
-                </a>
+            <div class="w-2/3 file:w-full flex flex-col justify-evenly">
+              <div class="px-6 py-4">
+                <div class="font-bold text-center text-xl mb-2">
+                  Space Explore Website
+                </div>
               </div>
-            </div>
-          </div>
-
-          {/* Project 2 */}
-
-          <div class="rounded overflow-hidden shadow-lg">
-            <img class="w-full" src={Project6} alt="Metaverse website" />
-            <div class="px-6 py-4">
-              <div class="font-bold text-center text-xl mb-2">
-                Metaverse Website
-              </div>
-              <p class="text-gray-700 text-base">
-                Metaverse website with framer motion animation. Styled with
-                tailwind css. Best scroll ever.
-              </p>
-            </div>
-            <div class="px-6 pt-4 pb-2">
-              <div className="flex justify-between  mt-2">
-                <a
-                  href="https://project-metaverse-khaki.vercel.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button className="bg-white underline text-black px-4 py-2 rounded-lg inline-block hover:text-orange-700 site-go">
-                    Site
-                  </button>
-                </a>
-
-                <a
-                  href="https://github.com/Eddiemetrium/project_metaverse"
-                  rel="noreferrer"
-                >
-                  <p className="text-blue px-4 pl-2 underline github-link">
-                    Github
-                  </p>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Project 3 */}
-
-          <div class="rounded overflow-hidden shadow-lg">
-            <img class="w-full" src={Project7} alt="Space exploration site" />
-            <div class="px-6 py-4">
-              <div class="font-bold text-center text-xl mb-2">
-                Space Explorae Website
-              </div>
-              <p class="text-gray-700 text-base">
+              <p class="text-gray-700 text-center">
                 Space explore website that has responsive design from the
                 frontend mentor challenge site. All device responsive.
               </p>
+              <div class="px-6 pt-4 pb-2">
+                <div class="flex justify-between py-4">
+                  <a
+                    href="https://space-exploration-frontend-mentor.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button class="bg-white underline text-black px-4 py-2 rounded-lg inline-block hover:text-orange-700 site-go">
+                      Site
+                    </button>
+                  </a>
+                  <a
+                    href="https://github.com/Eddiemetrium/space-exploration-frontend-mentor"
+                    rel="noreferrer"
+                  >
+                    <p class="text-blue px-4 pl-2 underline github-link">
+                      Github
+                    </p>
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="px-6 pt-4 pb-2">
-              <div className="flex justify-between  mt-2">
-                <a
-                  href="https://space-exploration-frontend-mentor.vercel.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button className="bg-white underline text-black px-4 py-2 rounded-lg inline-block hover:text-orange-700 site-go">
-                    Site
-                  </button>
-                </a>
+          </div>
+          <br />
+          <br />
+          <br />
+          {/* Project 2 */}
+          <div class="rounded overflow-hidden shadow-lg mt-7 flex flex-col  justify-between items-center">
+            <div class="w-2/3 sm:w-full ">
+              <img
+                class="w-full h-auto sm:h-full border-b border-solid border-[#6f9ce061] focus:outline-none focus:border-b-[#7393c361] "
+                src={Project1}
+                alt="Evo Gym"
+              />
+            </div>
+            <div class="w-2/3 file:w-full flex flex-col justify-evenly">
+              <div class="px-6 py-4">
+                <div class="font-bold text-center text-xl mb-2">Evo Gym</div>
+              </div>
+              <p class="text-gray-700 text-center">
+                Gym website built with TypeScript, Framer Motion animation, form
+                submit email working in real-time, and Tailwind CSS. Mobile
+                responsive.
+              </p>
+              <div class="px-6 pt-4 pb-2">
+                <div class="flex justify-between py-4">
+                  <a
+                    href="https://typescript-react-fitness-application.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button class="bg-white underline text-black px-4 py-2 rounded-lg inline-block hover:text-orange-700 site-go">
+                      Site
+                    </button>
+                  </a>
+                  <a
+                    href="https://github.com/Eddiemetrium/typescript-react-fitness-application"
+                    rel="noreferrer"
+                  >
+                    <p class="text-blue px-4 pl-2 underline github-link">
+                      Github
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <br />
+          <br />
 
-                <a
-                  href="https://github.com/Eddiemetrium/space-exploration-frontend-mentor"
-                  rel="noreferrer"
-                >
-                  <p className="text-blue px-4 pl-2 underline github-link">
-                    Github
-                  </p>
-                </a>
+          {/* Project 3 */}
+          <div class="rounded overflow-hidden shadow-lg mt-5 flex flex-col  justify-between items-center">
+            <div class="w-2/3 sm:w-full ">
+              <img
+                class="w-full rounded-md"
+                src={Project6}
+                alt="doctor booking"
+              />
+            </div>
+            <div class="w-2/3 file:w-full flex flex-col justify-evenly">
+              <div class="px-6 py-4">
+                <div class="font-bold text-center text-xl mb-2">
+                  Doctor Booking App
+                </div>
+              </div>
+              <p class="text-gray-700 text-center">
+                Fullstack doctor booking app. Build using nextjs, tailwind,
+                nodejs & mongodb. Checkout with stripe.
+              </p>
+              <div class="px-6 pt-4 pb-2">
+                <div class="flex justify-between py-4">
+                  <a
+                    href="https://doctor-booking-delta.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button class="bg-white underline text-black px-4 py-2 rounded-lg inline-block hover:text-orange-700 site-go">
+                      Site
+                    </button>
+                  </a>
+                  <a
+                    href="https://github.com/Eddiemetrium/doctor-booking"
+                    rel="noreferrer"
+                  >
+                    <p class="text-blue px-4 pl-2 underline github-link">
+                      Github
+                    </p>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
