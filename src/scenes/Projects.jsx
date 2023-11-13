@@ -21,7 +21,6 @@ const projectVariant = {
 const Project = ({ title }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
-  // const projectTitle = title.split(" ").join("-").toLowerCase();
 
   return (
     <motion.div variants={projectVariant} className="relative">
@@ -34,8 +33,7 @@ const Project = ({ title }) => {
 };
 
 const Projects = () => {
-  //  const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
-  //   bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
+ 
   return (
     <section id="projects" className="pt-60 pb-48  projects">
       {/* HEADINGS */}
@@ -182,7 +180,7 @@ const Projects = () => {
               <div class="px-6 pt-4 pb-2">
                 <div class="flex justify-between py-4">
                   <a
-                    href="https://doctor-booking-delta.vercel.app/"
+                    href="https://doctor-booking-gules.vercel.app/"
                     target="_blank"
                     rel="noreferrer"
                   >
