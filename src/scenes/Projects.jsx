@@ -94,7 +94,10 @@ const Projects = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <button class="bg-white underline text-black px-4 py-2 rounded-lg inline-block hover:text-orange-700 site-go">
+                    <button
+                      class="bg-yellow text-deep-blue rounded-sm py-3 px-7 font-semibold
+  hover:bg-red hover:text-white transition duration-500"
+                    >
                       Site
                     </button>
                   </a>
@@ -102,7 +105,10 @@ const Projects = () => {
                     href="https://github.com/Eddiemetrium/space-exploration-frontend-mentor"
                     rel="noreferrer"
                   >
-                    <p class="text-blue px-4 pl-2 underline github-link">
+                    <p
+                      class="bg-blue rounded-sm py-3 px-7 font-semibold
+  hover:bg-red hover:text-black transition duration-500"
+                    >
                       Github
                     </p>
                   </a>
@@ -138,7 +144,10 @@ const Projects = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <button class="bg-white underline text-black px-4 py-2 rounded-lg inline-block hover:text-orange-700 site-go">
+                    <button
+                      class="bg-yellow text-deep-blue rounded-sm py-3 px-7 font-semibold
+  hover:bg-red hover:text-white transition duration-500"
+                    >
                       Site
                     </button>
                   </a>
@@ -146,7 +155,10 @@ const Projects = () => {
                     href="https://github.com/Eddiemetrium/typescript-react-fitness-application"
                     rel="noreferrer"
                   >
-                    <p class="text-blue px-4 pl-2 underline github-link">
+                    <p
+                      class="bg-blue rounded-sm py-3 px-7 font-semibold
+  hover:bg-red hover:text-black transition duration-500"
+                    >
                       Github
                     </p>
                   </a>
@@ -184,7 +196,10 @@ const Projects = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <button class="bg-white underline text-black px-4 py-2 rounded-lg inline-block hover:text-orange-700 site-go">
+                    <button
+                      class="bg-yellow text-deep-blue rounded-sm py-3 px-7 font-semibold
+  hover:bg-red hover:text-white transition duration-500"
+                    >
                       Site
                     </button>
                   </a>
@@ -192,7 +207,10 @@ const Projects = () => {
                     href="https://github.com/Eddiemetrium/doctor-booking"
                     rel="noreferrer"
                   >
-                    <p class="text-blue px-4 pl-2 underline github-link">
+                    <p
+                      class="bg-blue rounded-sm py-3 px-7 font-semibold
+  hover:bg-red hover:text-black transition duration-500"
+                    >
                       Github
                     </p>
                   </a>
