@@ -35,7 +35,7 @@ const Project = ({ title }) => {
 const Projects = () => {
  
   return (
-    <section id="projects" className="pt-50 pb-48  projects">
+    <section id="projects" className="pt-40 pb-40  projects">
       {/* HEADINGS */}
       <motion.div
         className="md:w-2/5 mx-auto text-center"

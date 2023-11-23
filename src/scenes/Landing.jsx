@@ -9,6 +9,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import ProfileImg from "../assets/photo_2023-03-27_20-50-09.jpg";
 
 const Landing = ({ setSelectedPage }) => {
+  
   const ty = useRef(null);
 
   useEffect(() => {
@@ -42,11 +43,12 @@ const Landing = ({ setSelectedPage }) => {
     gsap.from(el, { rotation: 0, duration: 8 });
     gsap.to(el, { rotation: 360, duration: 9, ease: "elastic" });
   }, []);
+
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
     <section
       id="home"
-      className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10"
+      className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10 "
     >
       {/* IMAGE SECTION */}
       <div className="basis-3/5 z-10 mt-16 md:mt-20 flex justify-center md:order-2">
@@ -117,7 +119,7 @@ const Landing = ({ setSelectedPage }) => {
   hover:bg-blue hover:text-white transition duration-500"
             onClick={() => setSelectedPage("contact")}
             href="https://drive.google.com/file/d/1ZozZlyoJRDUJrjPflDLShuTCfXXjEWqS/view?usp=sharing"
-            target="_blank" 
+            target="_blank"
           >
             Resume
           </a>

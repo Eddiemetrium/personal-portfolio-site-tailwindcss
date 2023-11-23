@@ -1,118 +1,38 @@
-@keyframes glow{
-  from{text-shadow:0px 0px 5px #fffefeb4,0px 0px 5px #614ad3;}
-  to{text-shadow:0px 0px 20px #fffefeb4,0px 0px 15px #614ad3;}
+@keyframes glow {
+  from {
+    text-shadow: 0px 0px 5px #fffefeb4, 0px 0px 5px #614ad3;
+  }
+  to {
+    text-shadow: 0px 0px 20px #fffefeb4, 0px 0px 15px #614ad3;
+  }
 }
-@keyframes animate1 {
-    0% {
-        transform: translateX(-10%);
-    }
-    100% {
-        transform: translateX(130%);
-    }
+
+.nav-logo {
+  max-width: 4rem !important;
 }
-@keyframes animate2 {
-    0% {
-        transform: translateX(140%);
-    }
-    100% {
-        transform: translateX(-5%);
-    }
-}
-@keyframes animate3 {
-    0% {
-        transform: translateY(-4%);
-    }
-    100% {
-        transform: translateY(110%);
-    }
-}@keyframes animate4 {
-    0% {
-        transform: translateY(110%);
-    }
-    100% {
-        transform: translateY(-5%);
-    }
-}
-.nav-logo{
-max-width: 4rem !important;
-}
-.main-img{
+.main-img {
   max-width: 22rem;
   max-height: 18rem;
 }
 .resume {
   position: relative;
 }
-.text{
-    color: black !important;
+.text {
+  color: black !important;
 }
-.shine-line {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 3px;
-  background: linear-gradient(to right, rgb(0 0 0 / 0%), #0400ff);
-  animation: animate1 2s linear infinite;
-      animation-delay: 50ms;
 
-  z-index: 2;
-}
-.shine {
-  position: absolute;
-  top: 45px;
-  right: 0;
-  width: 100%;
-  height: 3px;
-  background: linear-gradient(to right, #0400ff,rgb(0 0 0 / 0%) );
-    animation: animate2 2s linear infinite;
-      animation-delay: 90ms;
-  z-index: 2;
-}
-.glow{
- font-size:3.5rem;
-  color:white;
-  font-family: 'Merienda', cursive;
-  animation-name:glow;
-  animation-duration:1s;
-  animation-iteration-count:infinite;
-  animation-direction:alternate;
-}
-.shine-right{
-position: absolute;
-  top: 0;
-  bottom: 0;
-  right: -155px;
- height: 50%;
-  width: 5px;
-  background: linear-gradient(to right, #0400ff,rgb(0 0 0 / 0%) );
-    animation: animate3 2s linear infinite; 
-  z-index: 2;
-}
-.shine-left{
-position: absolute;
-display: flex;
-  top:0px;
-  left: 261.5px;
- height: 50%;
-  width: 5px;
-  background: linear-gradient(to right, rgb(0 0 0 / 0),#0400ff );
-    animation: animate4 2s linear infinite;
-  z-index: 2;
-}
 .alice-carousel {
   background-color: rgba(0, 255, 255, 0.197);
   display: flex;
   justify-content: center;
   align-items: center;
-    position: relative;
-    width: 50% !important;
-    margin: auto;
-    direction: ltr;
-    margin-top: 9rem;
-    margin-bottom: 5rem;
+  position: relative;
+  width: 50% !important;
+  margin: auto;
+  direction: ltr;
+  margin-top: 9rem;
+  margin-bottom: 5rem;
 }
-.alice-carousel__stage-item{
+.alice-carousel__stage-item {
   padding-left: 8rem;
-
 }
