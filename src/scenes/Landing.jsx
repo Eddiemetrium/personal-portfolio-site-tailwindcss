@@ -16,9 +16,10 @@ const Landing = ({ setSelectedPage }) => {
     const typed = new Typed(ty.current, {
       strings: [
         "Web Development",
-        "React Js",
-        "Next Js",
-        "API",
+        "ReactJs",
+        "NextJs",
+        "NodeJs",
+        "MongoDB",
         "JavaScript",
         "Tailwind CSS",
         "React Native",
@@ -55,18 +56,18 @@ const Landing = ({ setSelectedPage }) => {
         {isAboveLarge ? (
           <div
             className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px]
-            before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-blue before:z-[-1]"
+            before:w-full before:max-w-[400px] md:before:max-w-[400px] before:h-full before:border-2 before:border-blue before:z-[-1]"
           >
             <img
               alt="profile"
-              className="main-img  hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[250px] md:max-w-[350px] rounded-full border-3"
+              className="main-img  hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[250px] md:max-w-[250px] rounded-full border-3"
               src={ProfileImg}
             />
           </div>
         ) : (
           <img
             alt="profile"
-            className=" z-10 w-full max-w-[80px] md:max-w-[2000px] height-[40px] 
+            className=" z-10 w-full max-w-[80px] md:max-w-[1500px] height-[40px] 
              rounded-full"
             src={ProfileImg}
           />
@@ -104,7 +105,7 @@ const Landing = ({ setSelectedPage }) => {
 
         {/* CALL TO ACTIONS */}
         <motion.div
-          className="flex mt-5 justify-center md:justify-start"
+          className="flex mt-5 justify-center md:justify-between"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -115,8 +116,8 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <a
-            className="resume bg-yellow text-deep-blue rounded-sm py-3 px-7 font-semibold
-  hover:bg-blue hover:text-white transition duration-500"
+            className=" bg-yellow text-deep-blue rounded-sm py-3 px-7 font-semibold rounded-sm
+  hover:bg-red hover:text-white transition duration-500"
             onClick={() => setSelectedPage("contact")}
             href="https://drive.google.com/file/d/1ZozZlyoJRDUJrjPflDLShuTCfXXjEWqS/view?usp=sharing"
             target="_blank"
@@ -124,11 +125,14 @@ const Landing = ({ setSelectedPage }) => {
             Resume
           </a>
           <AnchorLink
-            className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
+            className="rounded-r-sm  py-0.5 pr-0.5 "
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
-            <div className="bg-deep-blue  hover:bg-blue hover:text-white transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair ">
+            <div
+              className=" bg-blue text-white rounded-sm py-3 px-7 font-semibold
+  hover:bg-red hover:text-white transition duration-500"
+            >
               Let's talk.
             </div>
           </AnchorLink>

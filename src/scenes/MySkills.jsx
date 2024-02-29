@@ -1,16 +1,12 @@
-import Gallery from "../components/Gallery";
 import LineGradient from "../components/LineGradient";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 
+
 const MySkills = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
-    <section
-      id="skills"
-      className="pt-10 pb-35 m-top
-"
-    >
+    <section id="skills" className=" pt-10 pb-10">
       {/* HEADER AND IMAGE SECTION */}
       <div className="md:flex md:justify-between md:gap-16 mt-40">
         <motion.div
@@ -24,7 +20,6 @@ const MySkills = () => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <Gallery />
           <p className="font-playfair font-semibold text-4xl mb-5">
             MY <span className="text-red">SKILLS</span>
           </p>
@@ -132,6 +127,7 @@ const MySkills = () => {
           </p>
         </motion.div>
       </div>
+
     </section>
   );
 };

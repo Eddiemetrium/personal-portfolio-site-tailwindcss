@@ -39,46 +39,45 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
   return (
     <div>
-    <nav className={`${navbarBackground} z-40 w-full fixed top-0 mt-3 py-4`}>
-      <div className="flex items-center justify-between mx-auto w-5/6">
-        <h4 className="font-playfair text-3xl font-bold">
-          <img
-            ref={logoRef}
-            className="nav-logo w-5"
-            alt="ed-logo"
-            src={EdLogo}
-          />
-        </h4>
-        <section>
-
-        </section>
-        {/* DESKTOP NAV */}
-        {isDesktop && (
-          <div className="flex justify-between gap-16 font-opensans text-md font-semibold">
-            <Link
-              page="Home"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
+      <nav className={`${navbarBackground} z-40 w-full fixed top-0 mt-3 py-4`}>
+        <div className="flex items-center justify-between mx-auto w-5/6">
+          <h4 className="font-playfair text-3xl font-bold">
+            <img
+              ref={logoRef}
+              className="nav-logo w-5"
+              alt="ed-logo"
+              src={EdLogo}
             />
-            <Link
-              page="Skills"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
-            <Link
-              page="Projects"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
-            <Link
-              page="Contact"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
-          </div>
-        )}
-      </div>
-    </nav></div>
+          </h4>
+          <section></section>
+          {/* DESKTOP NAV */}
+          {isDesktop && (
+            <div className="flex justify-between gap-16 font-opensans text-md font-semibold">
+              <Link
+                page="Home"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <Link
+                page="Skills"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <Link
+                page="Projects"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <Link
+                page="Contact"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+            </div>
+          )}
+        </div>
+      </nav>
+    </div>
   );
 };
 

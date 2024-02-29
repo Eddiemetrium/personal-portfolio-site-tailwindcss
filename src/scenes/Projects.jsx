@@ -20,7 +20,7 @@ const projectVariant = {
 
 const Project = ({ title }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
-    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
+    bg-grey z-30 flex flex-col justify-center items-center text-center p-8 text-deep-blue`;
 
   return (
     <motion.div variants={projectVariant} className="relative">
@@ -35,7 +35,7 @@ const Project = ({ title }) => {
 const Projects = () => {
  
   return (
-    <section id="projects" className="pt-40 pb-40  projects">
+    <section id="projects" className="pt-30 pb-40 projects">
       {/* HEADINGS */}
       <motion.div
         className="md:w-2/5 mx-auto text-center"

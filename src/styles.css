@@ -27,12 +27,16 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 50% !important;
+  width: 25% !important;
   margin: auto;
   direction: ltr;
   margin-top: 9rem;
   margin-bottom: 5rem;
 }
 .alice-carousel__stage-item {
-  padding-left: 8rem;
+ margin-left: 18rem;
+}
+.gallery{
+margin-left: 25rem;
+margin: 0 auto;
 }

@@ -58,7 +58,7 @@ body,
   width: 5rem;
 }
 .projects {
-  margin-top: 30rem;
+  margin-top: 10rem;
 }
 /* Cursor */
 .typed-cursor {
@@ -101,9 +101,10 @@ body,
     background-size: unset; /* Reset background size */
     background-repeat: unset; /* Reset background repeat */
   }
+ 
   .projects {
-    margin-top: 5rem;
-  }
+  margin-top: 15rem !important;
+}
   .glow {
     font-size: calc(2vw + 2vh + 2vmin);
     font-family: "Tilt Prism", cursive;
