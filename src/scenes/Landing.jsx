@@ -15,14 +15,13 @@ const Landing = ({ setSelectedPage }) => {
   useEffect(() => {
     const typed = new Typed(ty.current, {
       strings: [
-        "Web Development",
+        "JavaScript",
+        "React Native",
         "ReactJs",
         "NextJs",
         "NodeJs",
         "MongoDB",
-        "JavaScript",
         "Tailwind CSS",
-        "React Native",
       ],
       loop: true,
       loopCount: Infinity,
@@ -116,8 +115,8 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <a
-            className=" bg-yellow text-deep-blue rounded-sm py-3 px-7 font-semibold rounded-sm
-  hover:bg-red hover:text-white transition duration-500"
+            className=" bg-yellow text-deep-blue rounded-sm py-3 px-7 font-semibold 
+  button-hover hover:text-white transition duration-500"
             onClick={() => setSelectedPage("contact")}
             href="https://drive.google.com/file/d/1ZozZlyoJRDUJrjPflDLShuTCfXXjEWqS/view?usp=sharing"
             target="_blank"

@@ -92,7 +92,7 @@ const Contact = () => {
               </p>
             )}
             <input
-            style={{marginTop:"1rem"}}
+              style={{ marginTop: "1rem" }}
               className="w-full bg-white font-semibold text-black p-3 contact-input "
               type="text"
               placeholder="SUBJECT"
@@ -144,10 +144,11 @@ const Contact = () => {
             )}
 
             <button
-              className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
+              className="bg-yellow text-deep-blue rounded-sm py-3 px-7 font-semibold 
+  button-hover hover:text-white transition duration-500"
               type="submit"
             >
-              Send 
+              Send
             </button>
           </form>
         </motion.div>
