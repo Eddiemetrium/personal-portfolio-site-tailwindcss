@@ -95,7 +95,7 @@ const Projects = () => {
                     rel="noreferrer"
                   >
                     <button
-                      class="bg-yellow text-deep-blue rounded-sm py-3 px-7 font-semibold
+                      class="bg-red text-white rounded-sm py-3 px-7 font-semibold
   hover:bg-red hover:text-white transition duration-500"
                     >
                       Site
@@ -107,7 +107,7 @@ const Projects = () => {
                   >
                     <p
                       class="bg-blue rounded-sm py-3 px-7 font-semibold
-  hover:bg-red hover:text-black transition duration-500"
+   hover:text-black transition duration-500"
                     >
                       Github
                     </p>
@@ -145,8 +145,8 @@ const Projects = () => {
                     rel="noreferrer"
                   >
                     <button
-                      class="bg-yellow text-deep-blue rounded-sm py-3 px-7 font-semibold
-  hover:bg-red hover:text-white transition duration-500"
+                      class="bg-red text-white rounded-sm py-3 px-7 font-semibold
+  hover:text-white transition duration-500"
                     >
                       Site
                     </button>
@@ -157,7 +157,7 @@ const Projects = () => {
                   >
                     <p
                       class="bg-blue rounded-sm py-3 px-7 font-semibold
-  hover:bg-red hover:text-black transition duration-500"
+   hover:text-black transition duration-500"
                     >
                       Github
                     </p>
@@ -197,8 +197,8 @@ const Projects = () => {
                     rel="noreferrer"
                   >
                     <button
-                      class="bg-yellow text-deep-blue rounded-sm py-3 px-7 font-semibold
-  hover:bg-red hover:text-white transition duration-500"
+                      class="bg-red text-white rounded-sm py-3 px-7 font-semibold
+   hover:text-white transition duration-500"
                     >
                       Site
                     </button>
@@ -209,7 +209,7 @@ const Projects = () => {
                   >
                     <p
                       class="bg-blue rounded-sm py-3 px-7 font-semibold
-  hover:bg-red hover:text-black transition duration-500"
+ hover:text-black transition duration-500"
                     >
                       Github
                     </p>

@@ -1,50 +1,74 @@
-@keyframes glow {
-  from {
-    text-shadow: 0px 0px 5px #fffefeb4, 0px 0px 5px #614ad3;
-  }
-  to {
-    text-shadow: 0px 0px 20px #fffefeb4, 0px 0px 15px #614ad3;
-  }
-}
+/* Your existing CSS styles */
 
 .nav-logo {
   max-width: 4rem !important;
 }
+
 .main-img {
   max-width: 22rem;
   max-height: 18rem;
 }
+
 .resume {
   position: relative;
 }
+
 .text {
   color: black !important;
 }
 
-.alice-carousel {
-  background-color: rgba(0, 255, 255, 0.197);
+/* New CSS changes for the carousel */
+.carousel-container {
+  max-width: 80%;
+  margin: 9rem auto 5rem;
+}
+
+.image-container {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.image-wrapper {
   position: relative;
-  width: 25% !important;
-  margin: auto;
-  direction: ltr;
-  margin-top: 9rem;
-  margin-bottom: 5rem;
+  display: inline-block;
 }
-.alice-carousel__stage-item {
- margin-left: 18rem;
+
+.carousel-image {
+  width: 50%; /* Set the width to 50% for desktop screens */
+  max-width: 50%; /* Added for clarity, can be removed */
+  max-height: 50%; /* Added for clarity, can be removed */
 }
-.gallery{
-margin-left: 25rem;
-margin: 0 auto;
+
+.star {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.5rem;
+  color: gold;
 }
-.button-hover{
-  /* background-image: url(./assets/Nav-Select-Std-v4.avif); */
-  width: 100%;
-  height: 100%;
+
+/* Add responsive styles for the carousel container */
+@media (max-width: 768px) {
+  .carousel-container {
+    max-width: 90%;
+  }
+
+  .carousel-image {
+    width: 25%; /* Set the width to 25% for mobile devices */
+    max-width: 25%; /* Added for clarity, can be removed */
+    max-height: 25%; /* Added for clarity, can be removed */
+  }
 }
-.button-hover:hover{
-  background-image: url(./assets/Nav-Select-Std-v4.avif);
+
+@media (max-width: 480px) {
+  .carousel-container {
+    max-width: 95%;
+  }
+
+  .carousel-image {
+    width: 25%; /* Set the width to 25% for smaller mobile devices */
+    max-width: 25%; /* Added for clarity, can be removed */
+    max-height: 25%; /* Added for clarity, can be removed */
+  }
 }

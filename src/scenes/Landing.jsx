@@ -115,8 +115,8 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <a
-            className=" bg-yellow text-deep-blue rounded-sm py-3 px-7 font-semibold 
-  button-hover hover:text-white transition duration-500"
+            className="bg-red text-white rounded-sm py-3 px-7 font-semibold 
+  hover:bg-yellow transition duration-500"
             onClick={() => setSelectedPage("contact")}
             href="https://drive.google.com/file/d/1ZozZlyoJRDUJrjPflDLShuTCfXXjEWqS/view?usp=sharing"
             target="_blank"
@@ -130,7 +130,7 @@ const Landing = ({ setSelectedPage }) => {
           >
             <div
               className=" bg-blue text-white rounded-sm py-3 px-7 font-semibold
-  hover:bg-red hover:text-white transition duration-500"
+   hover:text-white transition duration-500"
             >
               Let's talk.
             </div>
