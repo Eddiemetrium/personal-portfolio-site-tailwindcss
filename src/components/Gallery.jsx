@@ -24,7 +24,6 @@ const Gallery = () => {
           className="carousel-image"
           alt="HTML"
         />
-        <span className="star">&#9733;</span>
       </div>
     </div>,
     <div className="image-container" key={2}>
@@ -35,7 +34,6 @@ const Gallery = () => {
           className="carousel-image"
           alt="CSS"
         />
-        <span className="star">&#9733;</span>
       </div>
     </div>,
     <div className="image-container" key={3}>
@@ -46,7 +44,6 @@ const Gallery = () => {
           className="carousel-image"
           alt="JavaScript"
         />
-        <span className="star">&#9733;</span>
       </div>
     </div>,
     <div className="image-container" key={4}>
@@ -57,7 +54,6 @@ const Gallery = () => {
           className="carousel-image"
           alt="React"
         />
-        <span className="star">&#9733;</span>
       </div>
     </div>,
     <div className="image-container" key={5}>
@@ -68,7 +64,6 @@ const Gallery = () => {
           className="carousel-image"
           alt="Next.js"
         />
-        <span className="star">&#9733;</span>
       </div>
     </div>,
     <div className="image-container" key={6}>
@@ -79,7 +74,6 @@ const Gallery = () => {
           className="carousel-image"
           alt="Git"
         />
-        <span className="star">&#9733;</span>
       </div>
     </div>,
     <div className="image-container" key={7}>
@@ -90,7 +84,6 @@ const Gallery = () => {
           className="carousel-image"
           alt="Tailwind CSS"
         />
-        <span className="star">&#9733;</span>
       </div>
     </div>,
     <div className="image-container" key={8}>
@@ -101,7 +94,6 @@ const Gallery = () => {
           className="carousel-image"
           alt="TypeScript"
         />
-        <span className="star">&#9733;</span>
       </div>
     </div>,
     <div className="image-container" key={9}>
@@ -112,7 +104,6 @@ const Gallery = () => {
           className="carousel-image"
           alt="MongoDB"
         />
-        <span className="star">&#9733;</span>
       </div>
     </div>,
     <div className="image-container" key={10}>
@@ -123,7 +114,6 @@ const Gallery = () => {
           className="carousel-image"
           alt="Node.js"
         />
-        <span className="star">&#9733;</span>
       </div>
     </div>,
   ];

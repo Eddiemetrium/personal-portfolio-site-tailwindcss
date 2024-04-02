@@ -144,7 +144,7 @@ const Contact = () => {
             )}
 
             <button
-              className="bg-red text-white rounded-sm py-3 px-7 font-semibold 
+              className="bg-blue text-white rounded-sm py-3 px-7 font-semibold 
    transition duration-500"
               type="submit"
             >

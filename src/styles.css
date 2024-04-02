@@ -19,7 +19,7 @@
 
 /* New CSS changes for the carousel */
 .carousel-container {
-  max-width: 80%;
+  max-width: 40%;
   margin: 9rem auto 5rem;
 }
 
@@ -35,40 +35,33 @@
 }
 
 .carousel-image {
-  width: 50%; /* Set the width to 50% for desktop screens */
-  max-width: 50%; /* Added for clarity, can be removed */
-  max-height: 50%; /* Added for clarity, can be removed */
+  width: 10px !important; /* Set the width to 50% for desktop screens */
+  max-width: 10%; /* Added for clarity, can be removed */
+  max-height: 10%; /* Added for clarity, can be removed */
 }
 
-.star {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 1.5rem;
-  color: gold;
-}
 
 /* Add responsive styles for the carousel container */
 @media (max-width: 768px) {
   .carousel-container {
-    max-width: 90%;
+    max-width: 50%;
   }
 
   .carousel-image {
-    width: 25%; /* Set the width to 25% for mobile devices */
-    max-width: 25%; /* Added for clarity, can be removed */
-    max-height: 25%; /* Added for clarity, can be removed */
+    width: 15%; /* Set the width to 25% for mobile devices */
+    max-width: 15%; /* Added for clarity, can be removed */
+    max-height: 15%; /* Added for clarity, can be removed */
   }
 }
 
 @media (max-width: 480px) {
   .carousel-container {
-    max-width: 95%;
+    max-width: 5%;
   }
 
   .carousel-image {
-    width: 25%; /* Set the width to 25% for smaller mobile devices */
-    max-width: 25%; /* Added for clarity, can be removed */
-    max-height: 25%; /* Added for clarity, can be removed */
+    width: 5%; /* Set the width to 25% for smaller mobile devices */
+    max-width: 5%; /* Added for clarity, can be removed */
+    max-height: 5%; /* Added for clarity, can be removed */
   }
 }
