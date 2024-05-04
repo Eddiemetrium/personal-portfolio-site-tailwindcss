@@ -49,7 +49,9 @@ function App() {
       style={{
         backgroundImage: removeBackgroundImage
           ? "none"
-          : "url(src/assets/desktop-background.jpg)",
+          :
+           "url()"
+           ,
       }}
     >
       <Navbar

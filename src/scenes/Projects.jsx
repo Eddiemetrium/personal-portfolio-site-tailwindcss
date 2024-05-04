@@ -3,6 +3,9 @@ import { motion } from "framer-motion";
 import Project1 from "../assets/Project1.png";
 import Project6 from "../assets/Screenshot from 2023-11-06 06-39-09.png";
 import Project7 from "../assets/screenshot-1.jpeg";
+import UpperHand from "../assets/trap-1.webp";
+import LowerHand from "../assets/trap-2.webp";
+
 
 const container = {
   hidden: {},
@@ -48,6 +51,11 @@ const Projects = () => {
           visible: { opacity: 1, y: 0 },
         }}
       >
+        <img
+          class="w-full h-auto sm:h-full border-b border-solid border-[#6f9ce061] focus:outline-none focus:border-b-[#7393c361] "
+          src={UpperHand}
+          alt="Space exploration site"
+        />
         <div>
           <p className="font-playfair font-semibold text-4xl">
             <span className="text-yellow">PRO</span>JECTS
@@ -218,6 +226,11 @@ const Projects = () => {
               </div>
             </div>
           </div>
+          <img
+            class="w-1/2 mx-auto h-auto sm:h-full border-b border-solid border-[#6f9ce061] focus:outline-none focus:border-b-[#7393c361] "
+            src={LowerHand}
+            alt="Space exploration site"
+          />
         </motion.div>
       </div>
     </section>

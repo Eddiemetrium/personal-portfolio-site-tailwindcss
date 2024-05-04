@@ -1,25 +1,6 @@
-/* Your existing CSS styles */
-
-.nav-logo {
-  max-width: 4rem !important;
-}
-
-.main-img {
-  max-width: 22rem;
-  max-height: 18rem;
-}
-
-.resume {
-  position: relative;
-}
-
-.text {
-  color: black !important;
-}
-
 /* New CSS changes for the carousel */
 .carousel-container {
-  max-width: 40%;
+  max-width: 80%;
   margin: 9rem auto 5rem;
 }
 
@@ -33,35 +14,38 @@
   position: relative;
   display: inline-block;
 }
-
-.carousel-image {
-  width: 10px !important; /* Set the width to 50% for desktop screens */
-  max-width: 10%; /* Added for clarity, can be removed */
-  max-height: 10%; /* Added for clarity, can be removed */
+.background-img{
+  background-image: url(./assets/bg-strip3.png);
+}
+/* Set image sizes for large screens */
+@media (min-width: 1024px) {
+  .carousel-image {
+    width: 30px !important;
+    height: 20px !important;
+  }
 }
 
+/* Set image sizes and reduced gap for mobile screens */
+@media (max-width: 767px) {
+  .carousel-image {
+    width: 15px !important;
+    height: 10px !important;
+  }
+
+  .alice-carousel__stage-item {
+    margin-right: 5px !important; /* Adjust this value to control the gap between images */
+  }
+}
 
 /* Add responsive styles for the carousel container */
 @media (max-width: 768px) {
   .carousel-container {
-    max-width: 50%;
-  }
-
-  .carousel-image {
-    width: 15%; /* Set the width to 25% for mobile devices */
-    max-width: 15%; /* Added for clarity, can be removed */
-    max-height: 15%; /* Added for clarity, can be removed */
+    max-width: 70%;
   }
 }
 
 @media (max-width: 480px) {
   .carousel-container {
-    max-width: 5%;
-  }
-
-  .carousel-image {
-    width: 5%; /* Set the width to 25% for smaller mobile devices */
-    max-width: 5%; /* Added for clarity, can be removed */
-    max-height: 5%; /* Added for clarity, can be removed */
+    max-width: 65%;
   }
 }
