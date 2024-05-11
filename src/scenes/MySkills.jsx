@@ -8,7 +8,7 @@ const MySkills = () => {
   return (
     <section id="skills" className=" pt-10 pb-10">
       {/* HEADER AND IMAGE SECTION */}
-      <div className="md:flex md:justify-between md:gap-16 mt-40">
+      <div className="md:flex md:justify-between md:gap-16 mt-40 ">
         <motion.div
           className="md:w-1/3"
           initial="hidden"

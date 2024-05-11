@@ -15,7 +15,7 @@
   display: inline-block;
 }
 .background-img{
-  background-image: url(./assets/bg-strip3.png);
+  background-image: url(./assets/RegularCollectionsHeroImageDark.png);
 }
 /* Set image sizes for large screens */
 @media (min-width: 1024px) {

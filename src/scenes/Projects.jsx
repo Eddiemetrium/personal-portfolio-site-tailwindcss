@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import Project1 from "../assets/Project1.png";
 import Project6 from "../assets/Screenshot from 2023-11-06 06-39-09.png";
 import Project7 from "../assets/screenshot-1.jpeg";
-import UpperHand from "../assets/trap-1.webp";
-import LowerHand from "../assets/trap-2.webp";
+import UpperHand from "../assets/trap-1.png";
+import LowerHand from "../assets/trap-2.png";
 
 
 const container = {
@@ -23,7 +23,7 @@ const projectVariant = {
 
 const Project = ({ title }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
-    bg-grey z-30 flex flex-col justify-center items-center text-center p-8 text-deep-blue`;
+    bg-grey z-30 flex flex-col justify-center items-center text-center p-8 text-deep-blue `;
 
   return (
     <motion.div variants={projectVariant} className="relative">
@@ -227,7 +227,7 @@ const Projects = () => {
             </div>
           </div>
           <img
-            class="w-1/2 mx-auto h-auto sm:h-full border-b border-solid border-[#6f9ce061] focus:outline-none focus:border-b-[#7393c361] "
+            class="lower-hand mx-auto h-auto sm:h-full border-b border-solid border-[#6f9ce061] focus:outline-none focus:border-b-[#7393c361] "
             src={LowerHand}
             alt="Space exploration site"
           />

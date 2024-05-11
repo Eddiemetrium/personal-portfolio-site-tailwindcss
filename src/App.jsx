@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./index.css";
 import Navbar from "./scenes/Navbar";
 import Landing from "./scenes/Landing";
 import DotGroup from "./scenes/DotGroup";
@@ -10,6 +11,7 @@ import Footer from "./scenes/Footer";
 import useMediaQuery from "./hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import Gallery from "./components/Gallery";
+import HeroImageDark from "../src/assets/RegularCollectionsHeroImageDark.png"
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -41,17 +43,17 @@ function App() {
     };
   }, []);
 
-  const removeBackgroundImage = windowWidth < 1000;
+  // const removeBackgroundImage = windowWidth < 1000;
 
   return (
     <div
-      className="app"
+      className="app background-image"
       style={{
-        backgroundImage: removeBackgroundImage
-          ? "none"
-          :
-           "url()"
-           ,
+        backgroundImage: HeroImageDark
+          // ? "none"
+          // :
+          //  "url(./)"
+          //  ,
       }}
     >
       <Navbar
