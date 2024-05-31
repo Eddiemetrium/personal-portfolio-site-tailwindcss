@@ -43,7 +43,7 @@ const Contact = () => {
       </motion.div>
 
       {/* FORM & IMAGE */}
-      <div className="md:flex md:justify-between gap-16 mt-5">
+      <div className="md:flex md:justify-between gap-16 mt-5 flex justify-center items-center mx-auto">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -53,7 +53,7 @@ const Contact = () => {
             hidden: { opacity: 0, y: 50 },
             visible: { opacity: 1, y: 0 },
           }}
-          className="basis-1/2 flex justify-center"
+          className="basis-1/2 flex justify-center items-center mx-auto md:flex-col xs:flex-col"
         >
           <img className="shake" src={GetInTouch} alt="contact" />
         </motion.div>

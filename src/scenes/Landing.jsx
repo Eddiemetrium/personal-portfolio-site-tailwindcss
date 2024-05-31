@@ -51,7 +51,7 @@ const Landing = ({ setSelectedPage }) => {
       className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10 "
     >
       {/* IMAGE SECTION */}
-      <div className="basis-3/5 background-img z-10 mt-16 md:mt-20 flex justify-center md:order-2">
+      <div className="background-img z-10 mt-16 md:mt-20 flex justify-center md:order-2">
         {isAboveLarge ? (
           <div
             className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px]
@@ -59,6 +59,7 @@ const Landing = ({ setSelectedPage }) => {
           >
             <img
               alt="profile"
+              style={{ display: "none" }}
               className="main-img  hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[250px] md:max-w-[250px] rounded-full border-3"
               src={ProfileImg}
             />
@@ -66,6 +67,7 @@ const Landing = ({ setSelectedPage }) => {
         ) : (
           <img
             alt="profile"
+            style={{ display: "none" }}
             className=" z-10 w-full max-w-[80px] md:max-w-[1500px] height-[40px] 
              rounded-full"
             src={ProfileImg}
@@ -74,7 +76,7 @@ const Landing = ({ setSelectedPage }) => {
       </div>
 
       {/* MAIN TEXT */}
-      <div className="z-30 basis-2/5 mt-12 md:mt-32 ">
+      <div className="z-30 w-full mt-12 md:mt-32 ">
         {/* HEADINGS */}
         <motion.div
           initial="hidden"
@@ -87,14 +89,14 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <p
-            ref={logoRef}
-            className=" glow text-base sm:text-3xl lg:text-5xl font-playfair z-10 text-center md:text-start w-6 "
+            // ref={logoRef}
+            className=" glow text-base sm:text-3xl lg:text-5xl font-playfair z-10 text-center md:text-start w-10 "
           >
             Edwin
-            <span className="relative font-semibold z-20 xs:absolute xs:-left-[-20px] xs:-top-[-70px] xs:z-[-1]">
-              Munene()
+            <span className="relative font-semibold z-20 xs:absolute xs:-left-[-10px] xs:-top-[-90px] xs:z-[-1]">
+              Munene ()
             </span>
-            <span>Dev</span>
+            <span> Dev</span>
           </p>
 
           <p className="mt-12 mb-5 text-sm text-center md:text-start xs:text-start">

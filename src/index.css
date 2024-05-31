@@ -40,7 +40,7 @@ body,
   color: black !important;
 }
 .m-top {
-  margin-top: 5rem;
+  margin-top: 10rem;
 }
 .glow {
   font-size: calc(2vw + 2vh + 2vmin);
@@ -94,9 +94,9 @@ body,
     transform: translateX(0px);
   }
 
-  40%,
+  20%,
   80% {
-    transform: translateY(12px);
+    transform: translateY(20px);
   }
 }
 .shake {

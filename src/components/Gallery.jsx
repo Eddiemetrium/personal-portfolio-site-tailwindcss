@@ -16,102 +16,112 @@ const Gallery = () => {
   const handleOnDragStart = (e) => e.preventDefault();
 
   const items = [
-    <div className="image-container" key={1}>
-      <div className="image-wrapper">
+    <div className="image-container pt-5 mt-5" key={1}>
+      <div className="image-wrapper image-resize">
         <img
           src={Html}
           onDragStart={handleOnDragStart}
-          className="carousel-image"
+          className="carousel-image image-resize"
+          style={{ height: "10rem", width: "10rem", }}
           alt="HTML"
         />
       </div>
     </div>,
     <div className="image-container" key={2}>
-      <div className="image-wrapper">
+      <div className="image-wrapper image-resize">
         <img
           src={Css}
           onDragStart={handleOnDragStart}
-          className="carousel-image"
+          style={{ height: "8rem", width: "10rem" }}
+          className="carousel-image image-resize"
           alt="CSS"
         />
       </div>
     </div>,
     <div className="image-container" key={3}>
-      <div className="image-wrapper">
+      <div className="image-wrapper image-resize">
         <img
           src={JS}
           onDragStart={handleOnDragStart}
-          className="carousel-image"
+          style={{ height: "10rem", width: "10rem" }}
+          className="carousel-image image-resize"
           alt="JavaScript"
         />
       </div>
     </div>,
     <div className="image-container" key={4}>
-      <div className="image-wrapper">
+      <div className="image-wrapper image-resize">
         <img
           src={ReactJs}
           onDragStart={handleOnDragStart}
-          className="carousel-image"
+          style={{ height: "10rem", width: "10rem" }}
+          className="carousel-image image-resize"
           alt="React"
         />
       </div>
     </div>,
     <div className="image-container" key={5}>
-      <div className="image-wrapper">
+      <div className="image-wrapper image-resize">
         <img
           src={NextJs}
           onDragStart={handleOnDragStart}
-          className="carousel-image"
+          style={{ height: "10rem", width: "10rem" }}
+          className="carousel-image image-resize"
           alt="Next.js"
         />
       </div>
     </div>,
     <div className="image-container" key={6}>
-      <div className="image-wrapper">
+      <div className="image-wrapper image-resize">
         <img
           src={Git}
           onDragStart={handleOnDragStart}
+          style={{ height: "10rem", width: "10rem" }}
           className="carousel-image"
           alt="Git"
         />
       </div>
     </div>,
     <div className="image-container" key={7}>
-      <div className="image-wrapper">
+      <div className="image-wrapper image-resize">
         <img
           src={Tailwind}
           onDragStart={handleOnDragStart}
-          className="carousel-image"
+          style={{ height: "10rem", width: "10rem" }}
+          className="carousel-image image-resize"
           alt="Tailwind CSS"
         />
       </div>
     </div>,
     <div className="image-container" key={8}>
-      <div className="image-wrapper">
+      <div className="image-wrapper image-resize">
         <img
           src={TypeScript}
           onDragStart={handleOnDragStart}
-          className="carousel-image"
+          style={{ height: "8rem", width: "10rem" }}
+          className="carousel-image image-resize"
           alt="TypeScript"
         />
       </div>
     </div>,
     <div className="image-container" key={9}>
-      <div className="image-wrapper">
+      <div className="image-wrapper image-resize">
         <img
           src={MongoDb}
           onDragStart={handleOnDragStart}
-          className="carousel-image"
+          style={{ height: "10rem", width: "10rem" }}
+          className="carousel-image image-resize"
           alt="MongoDB"
         />
       </div>
     </div>,
     <div className="image-container" key={10}>
-      <div className="image-wrapper">
+      <div className="image-wrapper image-resize">
         <img
           src={NodeJS}
           onDragStart={handleOnDragStart}
-          className="carousel-image"
+          style={{ height: "10rem", width: "10rem", display:"flex",justifyContent:"center", alignItems:"center" }}
+          className="carousel-image image-resize"
           alt="Node.js"
         />
       </div>
