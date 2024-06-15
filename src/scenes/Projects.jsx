@@ -275,6 +275,7 @@ const Projects = () => {
           <img
             class="lower-hand mx-auto h-auto sm:h-full border-b border-solid border-[#6f9ce061] focus:outline-none focus:border-b-[#7393c361] "
             src={LowerHand}
+             style={{width:"28rem",height:"12rem"}}    
             alt="Space exploration site"
           />
         </motion.div>

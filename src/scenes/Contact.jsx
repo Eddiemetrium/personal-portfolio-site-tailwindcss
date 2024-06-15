@@ -4,19 +4,18 @@ import { motion } from "framer-motion";
 import GetInTouch from "../assets/Get in touch-amico.png";
 
 const Contact = () => {
-
   const {
     register,
     trigger,
     formState: { errors },
-  } = useForm()
+  } = useForm();
 
   const onSubmit = async (e) => {
-    const isValid = await trigger()
+    const isValid = await trigger();
     if (!isValid) {
-      e.preventDefault()
+      e.preventDefault();
     }
-  }
+  };
 
   return (
     <section id="contact" className="py-48">
@@ -43,7 +42,7 @@ const Contact = () => {
       </motion.div>
 
       {/* FORM & IMAGE */}
-      <div className="md:flex md:justify-between gap-16 mt-5 flex justify-center items-center mx-auto">
+      <div className="flex flex-col md:flex-row md:justify-between gap-16 mt-5 items-center mx-auto">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -53,9 +52,9 @@ const Contact = () => {
             hidden: { opacity: 0, y: 50 },
             visible: { opacity: 1, y: 0 },
           }}
-          className="basis-1/2 flex justify-center items-center mx-auto md:flex-col xs:flex-col"
+          className="flex justify-center items-center mx-auto"
         >
-          <img className="shake" src={GetInTouch} alt="contact" />
+          <img className="shake lg:w-[20rem]" src={GetInTouch} alt="contact" />
         </motion.div>
 
         <motion.div
@@ -67,7 +66,7 @@ const Contact = () => {
             hidden: { opacity: 0, y: 50 },
             visible: { opacity: 1, y: 0 },
           }}
-          className="basis-1/2 mt-10 md:mt-0"
+          className="mt-10 md:mt-0  md:w-1/2"
         >
           <form
             target="_blank"
@@ -84,7 +83,6 @@ const Contact = () => {
                 maxLength: 100,
               })}
             />
-
             {errors.name && (
               <p className="text-red mt-1 contact-input">
                 {errors.name.type === "required" && "This field is required."}
@@ -93,7 +91,7 @@ const Contact = () => {
             )}
             <input
               style={{ marginTop: "1rem" }}
-              className="w-full bg-white font-semibold text-black p-3 contact-input "
+              className="w-full bg-white font-semibold text-black p-3 contact-input"
               type="text"
               placeholder="SUBJECT"
               {...register("subject", {
@@ -101,10 +99,12 @@ const Contact = () => {
                 maxLength: 100,
               })}
             />
-            {errors.email && (
-              <p className="text-black mt-1">
-                {errors.email.type === "required" && "This field is required."}
-                {errors.email.type === "pattern" && "Invalid email address."}
+            {errors.subject && (
+              <p className="text-red mt-1 contact-input">
+                {errors.subject.type === "required" &&
+                  "This field is required."}
+                {errors.subject.type === "maxLength" &&
+                  "Max length is 100 char."}
               </p>
             )}
             <input
@@ -117,7 +117,7 @@ const Contact = () => {
               })}
             />
             {errors.email && (
-              <p className="text-black mt-1">
+              <p className="text-red mt-1 contact-input">
                 {errors.email.type === "required" && "This field is required."}
                 {errors.email.type === "pattern" && "Invalid email address."}
               </p>
@@ -135,21 +135,20 @@ const Contact = () => {
               })}
             />
             {errors.message && (
-              <p className="text-red mt-1">
+              <p className="text-red mt-1 contact-input">
                 {errors.message.type === "required" &&
                   "This field is required."}
                 {errors.message.type === "maxLength" &&
                   "Max length is 2000 char."}
               </p>
             )}
-
+<div className="mx-auto flex justify-center items-center">
             <button
-              className="bg-blue text-white rounded-sm py-3 px-7 font-semibold 
-   transition duration-500"
+              className="bg-blue   text-white rounded-sm py-3 px-7 font-semibold transition duration-500"
               type="submit"
             >
               Send
-            </button>
+            </button></div>
           </form>
         </motion.div>
       </div>

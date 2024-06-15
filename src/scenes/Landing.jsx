@@ -6,10 +6,9 @@ import SocialMediaIcons from "../components/SocialMediaIcons";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import ProfileImg from "../assets/photo_2023-03-27_20-50-09.jpg";
+import SvgLamp from "../assets/chromelamp.svg";
 
 const Landing = ({ setSelectedPage }) => {
-  
   const ty = useRef(null);
 
   useEffect(() => {
@@ -53,30 +52,27 @@ const Landing = ({ setSelectedPage }) => {
       {/* IMAGE SECTION */}
       <div className="background-img z-10 mt-16 md:mt-20 flex justify-center md:order-2">
         {isAboveLarge ? (
-          <div
-            className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px]
-            before:w-full before:max-w-[400px] md:before:max-w-[400px] before:h-full before:border-2 before:border-blue before:z-[-1]"
-          >
+          <div>
             <img
               alt="profile"
-              style={{ display: "none" }}
-              className="main-img  hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[250px] md:max-w-[250px] rounded-full border-3"
-              src={ProfileImg}
+              style={{ width: "25rem", height: "25rem" }}
+              className="main-img  hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[150px] md:max-w-[150px] rounded-full border-3"
+              src={SvgLamp}
             />
           </div>
         ) : (
           <img
             alt="profile"
-            style={{ display: "none" }}
-            className=" z-10 w-full max-w-[80px] md:max-w-[1500px] height-[40px] 
+            style={{ width: "10rem", height: "10rem" }}
+            className=" z-10 w-full max-w-[80px] md:max-w-[150px] height-[40px] 
              rounded-full"
-            src={ProfileImg}
+            src={SvgLamp}
           />
         )}
       </div>
 
       {/* MAIN TEXT */}
-      <div className="z-30 w-full mt-12 md:mt-32 ">
+      <div className="z-30 w-full mt-12 md:mt-32 md:w-1/2">
         {/* HEADINGS */}
         <motion.div
           initial="hidden"
@@ -88,10 +84,7 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p
-            // ref={logoRef}
-            className=" glow text-base sm:text-3xl lg:text-5xl font-playfair z-10 text-center md:text-start w-10 "
-          >
+          <p className=" glow text-base sm:text-xl lg:text-3xl font-playfair z-10 text-center md:text-start w-10 ">
             Edwin
             <span className="relative font-semibold z-20 xs:absolute xs:-left-[-10px] xs:-top-[-90px] xs:z-[-1]">
               Munene ()

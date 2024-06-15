@@ -11,6 +11,8 @@ import Git from "../assets/ba8u9otcvrpidtbd94kvclvgb2.png";
 import TypeScript from "../assets/TypeScript.png";
 import NodeJS from "../assets/NodeJS.png";
 import MongoDb from "../assets/MongoDB.png";
+import Linux from "../assets/linux-22618.png";
+
 
 const Gallery = () => {
   const handleOnDragStart = (e) => e.preventDefault();
@@ -22,7 +24,7 @@ const Gallery = () => {
           src={Html}
           onDragStart={handleOnDragStart}
           className="carousel-image image-resize"
-          style={{ height: "10rem", width: "10rem", }}
+          style={{ height: "10rem", width: "10rem" }}
           alt="HTML"
         />
       </div>
@@ -120,7 +122,30 @@ const Gallery = () => {
         <img
           src={NodeJS}
           onDragStart={handleOnDragStart}
-          style={{ height: "10rem", width: "10rem", display:"flex",justifyContent:"center", alignItems:"center" }}
+          style={{
+            height: "10rem",
+            width: "10rem",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+          className="carousel-image image-resize"
+          alt="Node.js"
+        />
+      </div>
+    </div>,
+    <div className="image-container" key={11}>
+      <div className="image-wrapper image-resize">
+        <img
+          src={Linux}
+          onDragStart={handleOnDragStart}
+          style={{
+            height: "10rem",
+            width: "10rem",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
           className="carousel-image image-resize"
           alt="Node.js"
         />
