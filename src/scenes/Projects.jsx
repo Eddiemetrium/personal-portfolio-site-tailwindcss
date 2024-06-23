@@ -187,23 +187,23 @@ const Projects = () => {
               <img
                 class="w-full rounded-md"
                 src={Project6}
-                alt="doctor booking"
+                alt="blue laundry"
               />
             </div>
             <div class="w-2/3 file:w-full flex flex-col justify-evenly">
               <div class="px-6 py-4">
                 <div class="font-bold text-center text-xl mb-2">
-                  Doctor Booking App
+                  Blue Laundry Website
                 </div>
               </div>
               <p class="text-gray-700 text-center">
-                Fullstack doctor booking app. Build using nextjs, tailwind,
-                nodejs & mongodb. Checkout with stripe.
+                A website for the laundry business Blue Laundry Situated in
+                Kilifi County.
               </p>
               <div class="px-6 pt-4 pb-2">
                 <div class="flex justify-between py-4">
                   <a
-                    href="https://doctor-booking-gules.vercel.app/"
+                    href="https://blue-laundry-kilifi.vercel.app/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -215,7 +215,7 @@ const Projects = () => {
                     </button>
                   </a>
                   <a
-                    href="https://github.com/Eddiemetrium/doctor-booking"
+                    href="https://github.com/Eddiemetrium/"
                     rel="noreferrer"
                   >
                     <p
@@ -245,7 +245,9 @@ const Projects = () => {
                 </div>
               </div>
               <p class="text-gray-700 text-center">
-                A meme Coin deployed on the ICP block chain. I was responsible for the front end . Buy the coin, invest in crypto. Make money and thrive.
+                A meme Coin deployed on the ICP block chain. I was responsible
+                for the front end . Buy the coin, invest in crypto. Make money
+                and thrive.
               </p>
               <div class="px-6 pt-4 pb-2">
                 <div class="flex justify-between py-4">
@@ -275,7 +277,7 @@ const Projects = () => {
           <img
             class="lower-hand mx-auto h-auto sm:h-full border-b border-solid border-[#6f9ce061] focus:outline-none focus:border-b-[#7393c361] "
             src={LowerHand}
-             style={{width:"28rem",height:"12rem"}}    
+            style={{ width: "28rem", height: "12rem" }}
             alt="Space exploration site"
           />
         </motion.div>

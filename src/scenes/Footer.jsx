@@ -26,7 +26,7 @@ const Footer = () => {
 
   return (
     <footer
-      className="footer-background w-full sticky bottom-0 right-0 py-2 px-2 p-5"
+      className="footer-background w-full sticky bottom-0 right-0 py-2 px-2 p-5 sm:py-0 "
       style={{ width: "100%" }}
     >
       <div ref={scrollRef} className="w-full mx-auto">

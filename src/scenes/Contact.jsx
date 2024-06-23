@@ -29,7 +29,7 @@ const Contact = () => {
           hidden: { opacity: 0, x: 50 },
           visible: { opacity: 1, x: 0 },
         }}
-        className="flex justify-end w-full"
+        className="flex justify-center w-full"
       >
         <div>
           <p className="font-playfair font-semibold text-4xl">
@@ -42,7 +42,7 @@ const Contact = () => {
       </motion.div>
 
       {/* FORM & IMAGE */}
-      <div className="flex flex-col md:flex-row md:justify-between gap-16 mt-5 items-center mx-auto">
+      <div className="lg:flex flex-col md:flex-row md:justify-between gap-16 mt-5 items-center mx-auto">
         <motion.div
           initial="hidden"
           whileInView="visible"

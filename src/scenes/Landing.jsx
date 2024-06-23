@@ -55,8 +55,8 @@ const Landing = ({ setSelectedPage }) => {
           <div>
             <img
               alt="profile"
-              style={{ width: "25rem", height: "25rem" }}
-              className="main-img  hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[150px] md:max-w-[150px] rounded-full border-3"
+              style={{ width: "28rem", height: "25rem" }}
+              className="main-img  hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[180px] md:max-w-[180px] rounded-full border-3"
               src={SvgLamp}
             />
           </div>
@@ -64,7 +64,7 @@ const Landing = ({ setSelectedPage }) => {
           <img
             alt="profile"
             style={{ width: "10rem", height: "10rem" }}
-            className=" z-10 w-full max-w-[80px] md:max-w-[150px] height-[40px] 
+            className=" z-10 w-full max-w-[90px] md:max-w-[180px] height-[50px] 
              rounded-full"
             src={SvgLamp}
           />
@@ -72,7 +72,7 @@ const Landing = ({ setSelectedPage }) => {
       </div>
 
       {/* MAIN TEXT */}
-      <div className="z-30 w-full mt-12 md:mt-32 md:w-1/2">
+      <div className="z-30 w-full lg:w-2/3 mt-12 md:mt-32 md:w-1/2">
         {/* HEADINGS */}
         <motion.div
           initial="hidden"
@@ -99,7 +99,7 @@ const Landing = ({ setSelectedPage }) => {
 
         {/* CALL TO ACTIONS */}
         <motion.div
-          className="flex mt-5 justify-center md:justify-between"
+          className="flex mt-5 justify-center md:justify-between "
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
