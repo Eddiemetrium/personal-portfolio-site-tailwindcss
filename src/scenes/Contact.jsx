@@ -32,17 +32,17 @@ const Contact = () => {
         className="flex justify-center w-full"
       >
         <div>
-          <p className="font-playfair font-semibold text-4xl">
+          <p className="font-playfair font-semibold text-4xl text-center">
             <span className="text-yellow">CONTACT ME</span> TO GET STARTED
           </p>
-          <div className="flex md:justify-end my-5">
+          <div className="flex justify-center my-5">
             <LineGradient width="w-1/2" />
           </div>
         </div>
       </motion.div>
 
       {/* FORM & IMAGE */}
-      <div className="lg:flex flex-col md:flex-row md:justify-between gap-16 mt-5 items-center mx-auto">
+      <div className="gap-16 mt-5  mx-auto w-full">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -52,9 +52,13 @@ const Contact = () => {
             hidden: { opacity: 0, y: 50 },
             visible: { opacity: 1, y: 0 },
           }}
-          className="flex justify-center items-center mx-auto"
+          className="flex justify-center items-center mx-auto w-full lg:w-1/2"
         >
-          <img className="shake lg:w-[20rem]" src={GetInTouch} alt="contact" />
+          <img
+            className="shake w-full lg:w-[20rem]"
+            src={GetInTouch}
+            alt="contact"
+          />
         </motion.div>
 
         <motion.div
@@ -66,13 +70,14 @@ const Contact = () => {
             hidden: { opacity: 0, y: 50 },
             visible: { opacity: 1, y: 0 },
           }}
-          className="mt-10 md:mt-0  md:w-1/2"
+          className="mt-10 lg:mt-0 w-full lg:w-1/2"
         >
           <form
             target="_blank"
             onSubmit={onSubmit}
             action="https://formsubmit.co/5fcff513f13c7c3157dc8b88be03b41c"
             method="POST"
+            className="flex flex-col items-center"
           >
             <input
               className="w-full bg-white font-semibold text-black p-3 contact-input"
@@ -90,8 +95,7 @@ const Contact = () => {
               </p>
             )}
             <input
-              style={{ marginTop: "1rem" }}
-              className="w-full bg-white font-semibold text-black p-3 contact-input"
+              className="w-full bg-white font-semibold text-black p-3 mt-5 contact-input"
               type="text"
               placeholder="SUBJECT"
               {...register("subject", {
@@ -142,13 +146,14 @@ const Contact = () => {
                   "Max length is 2000 char."}
               </p>
             )}
-<div className="mx-auto flex justify-center items-center">
-            <button
-              className="bg-blue   text-white rounded-sm py-3 px-7 font-semibold transition duration-500"
-              type="submit"
-            >
-              Send
-            </button></div>
+            <div className="flex justify-center items-center w-full mt-5">
+              <button
+                className="bg-blue text-white rounded-sm py-3 px-7 font-semibold transition duration-500"
+                type="submit"
+              >
+                Send
+              </button>
+            </div>
           </form>
         </motion.div>
       </div>

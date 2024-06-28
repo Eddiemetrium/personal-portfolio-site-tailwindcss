@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Project1 from "../assets/Project1.png";
 import Project6 from "../assets/Screenshot from 2023-11-06 06-39-09.png";
 import Project7 from "../assets/screenshot-1.jpeg";
-import ProjectBoom from "../assets/Screenshot 2024-05-30 205327.png";
+import ProjectBoom from "../assets/Screenshot 2024-06-28 161109.png";
 
 import UpperHand from "../assets/trap-1.png";
 import LowerHand from "../assets/trap-2.png";
@@ -198,7 +198,7 @@ const Projects = () => {
               </div>
               <p class="text-gray-700 text-center">
                 A website for the laundry business Blue Laundry Situated in
-                Kilifi County.
+                Kilifi County. Logo and Brochure by yours truly.
               </p>
               <div class="px-6 pt-4 pb-2">
                 <div class="flex justify-between py-4">
@@ -214,10 +214,7 @@ const Projects = () => {
                       Site
                     </button>
                   </a>
-                  <a
-                    href="https://github.com/Eddiemetrium/"
-                    rel="noreferrer"
-                  >
+                  <a href="https://github.com/Eddiemetrium/" rel="noreferrer">
                     <p
                       class="bg-blue rounded-sm py-3 px-7 font-semibold
  hover:text-black transition duration-500"
@@ -241,17 +238,19 @@ const Projects = () => {
             <div class="w-2/3 file:w-full flex flex-col justify-evenly">
               <div class="px-6 py-4">
                 <div class="font-bold text-center text-xl mb-2">
-                  Boom Fart Meme Coin
+                  Krypt Etherium 
                 </div>
               </div>
               <p class="text-gray-700 text-center">
-                A meme Coin deployed on the ICP block chain. I was responsible
-                for the front end . Buy the coin, invest in crypto. Make money
-                and thrive.
+                A web3 project that uses Vite, Solidity, and Ethers.js to help you do teansactions on the Etherium blockchain.
               </p>
               <div class="px-6 pt-4 pb-2">
                 <div class="flex justify-between py-4">
-                  <a href="" target="_blank" rel="noreferrer">
+                  <a
+                    href="https://web3-vite-solidity.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <button
                       class="bg-red text-white rounded-sm py-3 px-7 font-semibold
    hover:text-white transition duration-500"
@@ -260,7 +259,7 @@ const Projects = () => {
                     </button>
                   </a>
                   <a
-                    href="https://github.com/Eddiemetrium/boom-fart-next"
+                    href="https://github.com/Eddiemetrium/Web3ViteSolidity"
                     rel="noreferrer"
                   >
                     <p

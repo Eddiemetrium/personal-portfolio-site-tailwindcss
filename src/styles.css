@@ -11,6 +11,18 @@
   height: 5rem !important;
 
 }
+/* Contact.css */
+.container {
+  display: flex;
+  flex-direction: column; /* Default to column for mobile/small screens */
+}
+
+@media (min-width: 1024px) {
+  .container {
+display: flex;  
+}
+}
+
 .alice-carousel__stage-item img{
   
   max-width: 5rem !important;
