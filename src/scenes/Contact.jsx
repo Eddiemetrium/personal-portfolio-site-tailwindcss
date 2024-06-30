@@ -42,7 +42,7 @@ const Contact = () => {
       </motion.div>
 
       {/* FORM & IMAGE */}
-      <div className="gap-16 mt-5  mx-auto w-full">
+      <div className="gap-16 mt-5  mx-auto w-full flex-container">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -55,7 +55,7 @@ const Contact = () => {
           className="flex justify-center items-center mx-auto w-full lg:w-1/2"
         >
           <img
-            className="shake w-full lg:w-[20rem]"
+            className="shake w-full lg:w-1/2"
             src={GetInTouch}
             alt="contact"
           />
@@ -70,17 +70,17 @@ const Contact = () => {
             hidden: { opacity: 0, y: 50 },
             visible: { opacity: 1, y: 0 },
           }}
-          className="mt-10 lg:mt-0 w-full lg:w-1/2"
+          className="mt-10 lg:mt-0 w-full lg:w-1/3"
         >
           <form
             target="_blank"
             onSubmit={onSubmit}
             action="https://formsubmit.co/5fcff513f13c7c3157dc8b88be03b41c"
             method="POST"
-            className="flex flex-col items-center"
+            className="flex flex-col items-center w-full lg:w-1/2 mx-auto"
           >
             <input
-              className="w-full bg-white font-semibold text-black p-3 contact-input"
+              className="w-full sm:w-3/4 lg:w-1/2 bg-white font-semibold text-black p-3 mt-5 contact-input"
               type="text"
               placeholder="NAME"
               {...register("name", {
@@ -95,7 +95,7 @@ const Contact = () => {
               </p>
             )}
             <input
-              className="w-full bg-white font-semibold text-black p-3 mt-5 contact-input"
+              className="w-full sm:w-3/4 lg:w-1/2 bg-white font-semibold text-black p-3 mt-5 contact-input"
               type="text"
               placeholder="SUBJECT"
               {...register("subject", {
@@ -112,7 +112,7 @@ const Contact = () => {
               </p>
             )}
             <input
-              className="w-full bg-white font-semibold text-black p-3 mt-5 contact-input"
+              className="w-full sm:w-3/4 lg:w-1/2 bg-white font-semibold text-black p-3 mt-5 contact-input"
               type="text"
               placeholder="EMAIL"
               {...register("email", {
@@ -126,9 +126,8 @@ const Contact = () => {
                 {errors.email.type === "pattern" && "Invalid email address."}
               </p>
             )}
-
             <textarea
-              className="w-full bg-white font-semibold text-black p-3 mt-5 contact-input"
+              className="w-full sm:w-3/4 lg:w-1/2 bg-white font-semibold text-black p-3 mt-5 contact-input"
               name="message"
               placeholder="MESSAGE"
               rows="4"

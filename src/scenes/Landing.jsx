@@ -113,7 +113,7 @@ const Landing = ({ setSelectedPage }) => {
             className="bg-red text-white rounded-sm py-3 px-7 font-semibold 
   hover:bg-yellow transition duration-500"
             onClick={() => setSelectedPage("contact")}
-            href="https://drive.google.com/file/d/1ZozZlyoJRDUJrjPflDLShuTCfXXjEWqS/view?usp=sharing"
+            href="https://drive.google.com/file/d/1wDDGwh3G1gFlmMCo4zAiH-aaeyKyc5zh/view?usp=sharing"
             target="_blank"
           >
             Resume

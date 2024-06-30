@@ -74,3 +74,21 @@ display: flex;
     max-width: 65%;
   }
 }
+.flex-container {
+  display: flex;
+  flex-direction: column; /* Default to column layout for small screens */
+  gap: 16px;
+  margin-top: 5px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .flex-container {
+    flex-direction: row; /* Change to row layout on large screens */
+    width: 50%; /* 1/2 width on large screens (lg) */
+  }
+}

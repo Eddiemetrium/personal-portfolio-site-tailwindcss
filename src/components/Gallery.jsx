@@ -12,6 +12,8 @@ import TypeScript from "../assets/TypeScript.png";
 import NodeJS from "../assets/NodeJS.png";
 import MongoDb from "../assets/MongoDB.png";
 import Linux from "../assets/linux-22618.png";
+import Gimp from "../assets/gimp_circle_icon.png";
+
 
 
 const Gallery = () => {
@@ -138,6 +140,23 @@ const Gallery = () => {
       <div className="image-wrapper image-resize">
         <img
           src={Linux}
+          onDragStart={handleOnDragStart}
+          style={{
+            height: "10rem",
+            width: "10rem",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+          className="carousel-image image-resize"
+          alt="Node.js"
+        />
+      </div>
+    </div>,
+    <div className="image-container" key={12}>
+      <div className="image-wrapper image-resize">
+        <img
+          src={Gimp}
           onDragStart={handleOnDragStart}
           style={{
             height: "10rem",
