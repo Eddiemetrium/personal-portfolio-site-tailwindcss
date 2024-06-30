@@ -198,12 +198,12 @@ const Projects = () => {
               </div>
               <p class="text-gray-700 text-center">
                 A website for the laundry business Blue Laundry Situated in
-                Kilifi County. Logo and Brochure by yours truly.
+                Kilifi County. Logo and Brochure by yours truly. Domain from google work space.
               </p>
               <div class="px-6 pt-4 pb-2">
                 <div class="flex justify-between py-4">
                   <a
-                    href="https://blue-laundry-kilifi.vercel.app/"
+                    href="https://bluelaundrykilifi.com/"
                     target="_blank"
                     rel="noreferrer"
                   >
