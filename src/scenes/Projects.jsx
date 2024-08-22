@@ -4,6 +4,11 @@ import Project1 from "../assets/Project1.png";
 import Project6 from "../assets/Screenshot from 2023-11-06 06-39-09.png";
 import Project7 from "../assets/screenshot-1.jpeg";
 import ProjectBoom from "../assets/Screenshot 2024-06-28 161109.png";
+import Decor1 from "../assets/decor1.svg";
+import Mask from "../assets/mask.svg";
+
+
+
 
 import UpperHand from "../assets/trap-1.png";
 import LowerHand from "../assets/trap-2.png";
@@ -198,7 +203,8 @@ const Projects = () => {
               </div>
               <p class="text-gray-700 text-center">
                 A website for the laundry business Blue Laundry Situated in
-                Kilifi County. Logo and Brochure by yours truly. Domain from google work space.
+                Kilifi County. Logo and Brochure by yours truly. Domain from
+                google work space.
               </p>
               <div class="px-6 pt-4 pb-2">
                 <div class="flex justify-between py-4">
@@ -238,11 +244,12 @@ const Projects = () => {
             <div class="w-2/3 file:w-full flex flex-col justify-evenly">
               <div class="px-6 py-4">
                 <div class="font-bold text-center text-xl mb-2">
-                  Krypt Etherium 
+                  Krypt Etherium
                 </div>
               </div>
               <p class="text-gray-700 text-center">
-                A web3 project that uses Vite, Solidity, and Ethers.js to help you do teansactions on the Etherium blockchain.
+                A web3 project that uses Vite, Solidity, and Ethers.js to help
+                you do teansactions on the Etherium blockchain.
               </p>
               <div class="px-6 pt-4 pb-2">
                 <div class="flex justify-between py-4">

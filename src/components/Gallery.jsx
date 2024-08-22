@@ -13,6 +13,9 @@ import NodeJS from "../assets/NodeJS.png";
 import MongoDb from "../assets/MongoDB.png";
 import Linux from "../assets/linux-22618.png";
 import Gimp from "../assets/gimp_circle_icon.png";
+import Poster1 from "../assets/Eddiemetrium Website Creation Services Poster.jpg";
+import Poster2 from "../assets/Blue and Yellow Minimalist Web Development Instagram Post A4.jpg";
+
 
 
 
@@ -167,6 +170,40 @@ const Gallery = () => {
           }}
           className="carousel-image image-resize"
           alt="Node.js"
+        />
+      </div>
+    </div>,
+    <div className="image-container" key={13}>
+      <div className="image-wrapper image-resize">
+        <img
+          src={Poster1}
+          onDragStart={handleOnDragStart}
+          style={{
+            height: "15rem",
+            width: "10rem",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+          className="carousel-image image-resize"
+          alt="Poster 1"
+        />
+      </div>
+    </div>,
+    <div className="image-container" key={14}>
+      <div className="image-wrapper image-resize">
+        <img
+          src={Poster2}
+          onDragStart={handleOnDragStart}
+          style={{
+            height: "15rem",
+            width: "10rem",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+          className="carousel-image image-resize"
+          alt="poster 2"
         />
       </div>
     </div>,
