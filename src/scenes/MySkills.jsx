@@ -27,7 +27,7 @@ const MySkills = () => {
           <p className="mt-10 mb-7 text-xl">
             I am full stack MERN developer with an interest in cyber security. I
             am proficient in react js, next js, node js, git, vanila css, mongo
-            db, tailwind css, Api integration and linux/unix.
+            db, tailwind css, Api integration and linux/unix. Learning Rust...
           </p>
         </motion.div>
 

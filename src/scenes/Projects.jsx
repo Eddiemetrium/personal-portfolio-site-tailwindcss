@@ -4,6 +4,8 @@ import Project1 from "../assets/Project1.png";
 import Project6 from "../assets/Screenshot from 2023-11-06 06-39-09.png";
 import Project7 from "../assets/screenshot-1.jpeg";
 import ProjectBoom from "../assets/Screenshot 2024-06-28 161109.png";
+import ChitChat from "../assets/chitchat.png";
+
 import Decor1 from "../assets/decor1.svg";
 import Mask from "../assets/mask.svg";
 
@@ -267,6 +269,57 @@ const Projects = () => {
                   </a>
                   <a
                     href="https://github.com/Eddiemetrium/Web3ViteSolidity"
+                    rel="noreferrer"
+                  >
+                    <p
+                      class="bg-blue rounded-sm py-3 px-7 font-semibold
+ hover:text-black transition duration-500"
+                    >
+                      Github
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Project 5 */}
+          <div class="rounded overflow-hidden shadow-lg mt-5 flex flex-col  justify-between items-center">
+            <div class="w-2/3 sm:w-full ">
+              <img
+                class="w-full rounded-md"
+                src={ChitChat}
+                alt="Chit chat webapp"
+              />
+            </div>
+            <div class="w-2/3 file:w-full flex flex-col justify-evenly">
+              <div class="px-6 py-4">
+                <div class="font-bold text-center text-xl mb-2">Chit Chat</div>
+              </div>
+              <p class="text-gray-700 text-center">
+                Chit Chat is chat application build with the power of MERN
+                Stack. React, Node.js, Socket.io and MongoDB.
+              </p>
+              <div className="mx-auto">
+              <p className="text-yellow font-bold">Logins: username and password</p>
+              <p>mwangi qwerty@123</p>
+              <p> xavier sundaynight12345</p></div>
+
+              <div class="px-6 pt-4 pb-2">
+                <div class="flex justify-between py-4">
+                  <a
+                    href="https://chit-chat-webapp-ona9i1kc5-eddiemetriums-projects.vercel.app/login"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button
+                      class="bg-red text-white rounded-sm py-3 px-7 font-semibold
+   hover:text-white transition duration-500"
+                    >
+                      Site
+                    </button>
+                  </a>
+                  <a
+                    href="https://github.com/Eddiemetrium/chit-chat-webapp"
                     rel="noreferrer"
                   >
                     <p

@@ -55,7 +55,7 @@ const Contact = () => {
           className="flex justify-center items-center mx-auto w-full lg:w-1/2"
         >
           <img
-            className="shake w-full lg:w-1/2"
+            className="shake w-1/2 lg:w-1/3"
             src={GetInTouch}
             alt="contact"
           />
@@ -80,7 +80,7 @@ const Contact = () => {
             className="flex flex-col items-center w-full lg:w-1/2 mx-auto"
           >
             <input
-              className="w-full sm:w-3/4 lg:w-1/2 bg-white font-semibold text-black p-3 mt-5 contact-input"
+              className="w-2/3 sm:w-3/4 lg:w-1/2 bg-white font-semibold text-black p-3 mt-5 contact-input"
               type="text"
               placeholder="NAME"
               {...register("name", {
@@ -95,7 +95,7 @@ const Contact = () => {
               </p>
             )}
             <input
-              className="w-full sm:w-3/4 lg:w-1/2 bg-white font-semibold text-black p-3 mt-5 contact-input"
+              className="w-2/3 sm:w-3/4 lg:w-1/2 bg-white font-semibold text-black p-3 mt-5 contact-input"
               type="text"
               placeholder="SUBJECT"
               {...register("subject", {
@@ -112,7 +112,7 @@ const Contact = () => {
               </p>
             )}
             <input
-              className="w-full sm:w-3/4 lg:w-1/2 bg-white font-semibold text-black p-3 mt-5 contact-input"
+              className="w-2/3 sm:w-3/4 lg:w-1/2 bg-white font-semibold text-black p-3 mt-5 contact-input"
               type="text"
               placeholder="EMAIL"
               {...register("email", {
@@ -127,7 +127,7 @@ const Contact = () => {
               </p>
             )}
             <textarea
-              className="w-full sm:w-3/4 lg:w-1/2 bg-white font-semibold text-black p-3 mt-5 contact-input"
+              className="w-2/3 sm:w-3/4 lg:w-1/2 bg-white font-semibold text-black p-3 mt-5 contact-input"
               name="message"
               placeholder="MESSAGE"
               rows="4"
