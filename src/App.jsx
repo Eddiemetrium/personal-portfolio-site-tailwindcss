@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import "./index.css";
+import Carousel from "../src/components/Carousel";
+import WhatsAppButton from "../src/components/WhatsAppButton";
 import Navbar from "./scenes/Navbar";
 import Landing from "./scenes/Landing";
 import DotGroup from "./scenes/DotGroup";
@@ -9,9 +10,10 @@ import Projects from "./scenes/Projects";
 import Contact from "./scenes/Contact";
 import Footer from "./scenes/Footer";
 import useMediaQuery from "./hooks/useMediaQuery";
-import { motion } from "framer-motion";
-import Gallery from "./components/Gallery";
 import HeroImageDark from "../src/assets/RegularCollectionsHeroImageDark.png"
+import { motion } from "framer-motion";
+import "./index.css";
+// import Gallery from "./components/Gallery";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -49,13 +51,14 @@ function App() {
     <div
       className="app background-image"
       style={{
-        backgroundImage: HeroImageDark
-          // ? "none"
-          // :
-          //  "url(./)"
-          //  ,
+        backgroundImage: HeroImageDark,
+        // ? "none"
+        // :
+        //  "url(./)"
+        //  ,
       }}
     >
+      <WhatsAppButton />
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
@@ -87,8 +90,8 @@ function App() {
         </motion.div>
       </div>
 
-      <div className="m-top">
-        <Gallery />
+      <div className="m-top mt-3 pt-4">
+        <Carousel />
       </div>
 
       <div className="w-5/6 mx-auto">
