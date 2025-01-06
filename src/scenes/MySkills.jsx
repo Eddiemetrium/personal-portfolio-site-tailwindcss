@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
 const MySkills = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
-    <section id="skills" className=" pt-10 pb-10">
+    <section id="skills" className="pt-10 pb-10">
       {/* HEADER AND IMAGE SECTION */}
-      <div className="md:flex md:justify-between md:gap-16 mt-40 ">
+      <div className="md:flex md:justify-between md:gap-16 mt-40">
         <motion.div
           className="md:w-1/3"
           initial="hidden"
@@ -25,9 +25,9 @@ const MySkills = () => {
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7 text-xl">
-            I am full stack MERN developer with an interest in cyber security. I
-            am proficient in react js, next js, node js, git, vanila css, mongo
-            db, tailwind css, Api integration and linux/unix. Learning Rust...
+            I am a full stack MERN developer with an interest in cyber security. I
+            am proficient in React.js, Next.js, Node.js, Git, vanilla CSS, MongoDB,
+            Tailwind CSS, API integration, and Linux/Unix. Currently learning Rust...
           </p>
         </motion.div>
 
@@ -48,7 +48,6 @@ const MySkills = () => {
           )}
         </div>
       </div>
-
       {/* SKILLS */}
       <div className="md:flex md:justify-between mt-16 gap-32">
         {/* EXPERIENCE */}
@@ -72,7 +71,7 @@ const MySkills = () => {
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
           </div>
-          <p className="mt-5">Experience is the best teacher. </p>
+          <p className="mt-5">Experience is the best teacher. We learn every day.</p>
         </motion.div>
 
         {/* INNOVATIVE */}
@@ -97,8 +96,8 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Innovation is what we need inorder to develop new technologies,
-            products and services
+            Innovation is essential for developing new technologies,
+            products, and services.
           </p>
         </motion.div>
         {/* IMAGINATIVE */}
@@ -123,11 +122,10 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Having ideas is the first step in the process of innovation
+            Having ideas is the first step in the process of innovation.
           </p>
         </motion.div>
       </div>
-
     </section>
   );
 };

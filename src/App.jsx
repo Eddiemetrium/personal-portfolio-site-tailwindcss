@@ -13,7 +13,6 @@ import useMediaQuery from "./hooks/useMediaQuery";
 import HeroImageDark from "../src/assets/RegularCollectionsHeroImageDark.png"
 import { motion } from "framer-motion";
 import "./index.css";
-// import Gallery from "./components/Gallery";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -45,17 +44,12 @@ function App() {
     };
   }, []);
 
-  // const removeBackgroundImage = windowWidth < 1000;
 
   return (
     <div
       className="app background-image"
       style={{
-        backgroundImage: HeroImageDark,
-        // ? "none"
-        // :
-        //  "url(./)"
-        //  ,
+        backgroundImage: `url(${HeroImageDark})`,
       }}
     >
       <WhatsAppButton />
@@ -90,7 +84,11 @@ function App() {
         </motion.div>
       </div>
 
-      <div className="m-top mt-3 pt-4">
+      <br />
+      <br />
+      <br />
+
+      <div className="m-top mt-4 pt-4 sm:mt-1 sm:pt-1">
         <Carousel />
       </div>
 

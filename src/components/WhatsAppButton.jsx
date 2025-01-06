@@ -29,7 +29,7 @@ import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
         boxShadow: "0 2px 5px rgba(0, 0, 0, 0.2)",
       }}
     >
-      <FontAwesomeIcon icon={faWhatsapp} size="3x" />
+      <FontAwesomeIcon icon={faWhatsapp} size="4x" />
 </a>  );
 };
 

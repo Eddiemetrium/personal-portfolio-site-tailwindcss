@@ -55,7 +55,7 @@ const Contact = () => {
           className="flex justify-center items-center mx-auto w-full lg:w-1/2"
         >
           <img
-            className="shake w-1/2 lg:w-1/3"
+            className="shake w-2/3 lg:w-1/3"
             src={GetInTouch}
             alt="contact"
           />
