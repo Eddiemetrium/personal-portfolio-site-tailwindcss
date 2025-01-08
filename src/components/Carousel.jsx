@@ -71,11 +71,11 @@ export default function SimpleSlider() {
     <div className="w-full bg-gray-100 py-10 sm:py-5">
       <Slider {...settings}>
         {images.map((image, index) => (
-          <div key={index} className="flex justify-center items-center">
+          <div key={index} className="flex justify-center items-center mx-auto">
             <img
               src={image.src}
               alt={image.alt}
-              className="w-24 px-4 h-24 object-contain sm:w-28 sm:h-28 md:w-32 md:h-32"
+              className="w-24 m-[2rem] px-2 h-24 object-contain sm:w-28 sm:h-28 md:w-32 md:h-32"
             />
           </div>
         ))}
