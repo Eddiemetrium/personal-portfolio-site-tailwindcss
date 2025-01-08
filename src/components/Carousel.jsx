@@ -9,7 +9,7 @@ import Css from "../assets/pngegg.png";
 import JS from "../assets/javascript-39400.png";
 import ReactJs from "../assets/react.png";
 import NextJs from "../assets/Next.js.png";
-import Tailwind from "../assets/Tailwind_CSS_Logo.svg";
+import Tailwind from "../assets/Tailwind_CSS_Logo.png";
 import Git from "../assets/ba8u9otcvrpidtbd94kvclvgb2.png";
 import TypeScript from "../assets/TypeScript.png";
 import NodeJS from "../assets/NodeJS.png";
@@ -22,7 +22,7 @@ export default function SimpleSlider() {
   const settings = {
     dots: false, // Turn off dots for continuous movement
     infinite: true, // Infinite scrolling
-    speed: 3000, // Animation speed
+    speed: 2000, // Animation speed
     autoplay: true, // Enable autoplay
     autoplaySpeed: 0, // For continuous movement
     cssEase: "linear", // Smooth continuous motion
