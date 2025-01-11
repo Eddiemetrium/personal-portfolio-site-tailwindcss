@@ -88,7 +88,7 @@ function App() {
       <br />
       <br />
 
-      <div className="m-top mt-4 pt-4 sm:mt-1 sm:pt-1">
+      <div className="m-top mt-4 pt-4 sm:mt-1 sm:pt-1 px-0 mx-0">
         <Carousel />
       </div>
 
