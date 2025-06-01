@@ -58,7 +58,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
   return (
     <div>
-      <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-4`}>
+      <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-1`}>
         <div className="flex items-center justify-between mx-auto w-5/6">
           <h4 className="font-playfair text-3xl font-bold">
             <img

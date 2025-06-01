@@ -16,36 +16,45 @@ import NodeJS from "../assets/NodeJS.png";
 import MongoDb from "../assets/MongoDB.png";
 import Linux from "../assets/linux-22618.png";
 import Gimp from "../assets/gimp_circle_icon.png";
+// import Solidity from "../assets/";
+
 
 export default function SimpleSlider() {
   // Slider settings
   const settings = {
-    dots: false, // Turn off dots for continuous movement
-    infinite: true, // Infinite scrolling
-    speed: 2000, // Animation speed
-    autoplay: true, // Enable autoplay
-    autoplaySpeed: 0, // For continuous movement
-    cssEase: "linear", // Smooth continuous motion
-    slidesToShow: 5, // Number of images visible (default)
-    slidesToScroll: 1, // Images to scroll at a time
-    pauseOnHover: false, // Disable pause on hover
+    dots: false,
+    infinite: true,
+    speed: 3000,
+    autoplay: true,
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    pauseOnHover: false,
+    arrows: false,
     responsive: [
       {
-        breakpoint: 1024, // For screens below 1024px
+        breakpoint: 1280,
         settings: {
-          slidesToShow: 4, // Show 4 slides
+          slidesToShow: 4,
         },
       },
       {
-        breakpoint: 768, // For screens below 768px
+        breakpoint: 1024,
         settings: {
-          slidesToShow: 3, // Show 3 slides
+          slidesToShow: 3,
         },
       },
       {
-        breakpoint: 480, // For screens below 480px
+        breakpoint: 768,
         settings: {
-          slidesToShow: 2, // Show 2 slides
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
         },
       },
     ],
@@ -65,21 +74,25 @@ export default function SimpleSlider() {
     { src: MongoDb, alt: "MongoDB" },
     { src: Linux, alt: "Linux" },
     { src: Gimp, alt: "Gimp" },
+    // { src: Solidity, alt: "Solidity"},
+
   ];
 
   return (
-    <div className="w-full bg-gray-100 py-10 sm:py-5">
-      <Slider {...settings}>
-        {images.map((image, index) => (
-          <div key={index} className="flex justify-center items-center mx-auto">
-            <img
-              src={image.src}
-              alt={image.alt}
-              className="w-24 m-[2rem] px-2 h-24 object-contain sm:w-28 sm:h-28 md:w-32 md:h-32"
-            />
-          </div>
-        ))}
-      </Slider>
+    <div className="w-full overflow-hidden bg-gray-100 py-10 sm:py-5">
+      <div className="max-w-[100vw] mx-auto">
+        <Slider {...settings}>
+          {images.map((image, index) => (
+            <div key={index} className="flex justify-center items-center">
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="w-20 h-20 object-contain sm:w-24 sm:h-24 md:w-28 md:h-28"
+              />
+            </div>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 }

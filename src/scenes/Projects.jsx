@@ -1,17 +1,10 @@
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
-import Project1 from "../assets/Project1.png";
-import Project6 from "../assets/Screenshot from 2023-11-06 06-39-09.png";
+import Project1 from "../assets/Ecohits-World-CBO-06-01-2025_12_33_PM.png";
+import Project6 from "../assets/NFT-CARDS-06-01-2025_12_33_PM.png";
 import Project7 from "../assets/screenshot-1.jpeg";
 import ProjectBoom from "../assets/Screenshot 2024-06-28 161109.png";
 import ChitChat from "../assets/chitchat.png";
-
-import Decor1 from "../assets/decor1.svg";
-import Mask from "../assets/mask.svg";
-
-
-
-
 import UpperHand from "../assets/trap-1.png";
 import LowerHand from "../assets/trap-2.png";
 
@@ -143,7 +136,7 @@ const Projects = () => {
               <img
                 class="w-full h-auto sm:h-full border-b border-solid border-[#6f9ce061] focus:outline-none focus:border-b-[#7393c361] "
                 src={Project1}
-                alt="Evo Gym"
+                alt="Eco Hits CBO"
               />
             </div>
             <div class="w-2/3 file:w-full flex flex-col justify-evenly">
@@ -151,14 +144,12 @@ const Projects = () => {
                 <div class="font-bold text-center text-xl mb-2">Evo Gym</div>
               </div>
               <p class="text-gray-700 text-center">
-                Gym website built with TypeScript, Framer Motion animation, form
-                submit email working in real-time, and Tailwind CSS. Mobile
-                responsive.
+              ECOHITS CBO is a community-based organization driven by art, entertainment, and environmental advocacy. We serve as a hub with our art, music, activities, and missions, fostering global engagement while appealing to donors, collaborators, and community members.
               </p>
               <div class="px-6 pt-4 pb-2">
                 <div class="flex justify-between py-4">
                   <a
-                    href="https://typescript-react-fitness-application.vercel.app/"
+                    href="https://ecohits-world-cbo.vercel.app/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -170,7 +161,7 @@ const Projects = () => {
                     </button>
                   </a>
                   <a
-                    href="https://github.com/Eddiemetrium/typescript-react-fitness-application"
+                    href="https://github.com/Eddiemetrium"
                     rel="noreferrer"
                   >
                     <p
@@ -194,24 +185,22 @@ const Projects = () => {
               <img
                 class="w-full rounded-md"
                 src={Project6}
-                alt="blue laundry"
+                alt="NFT World Museum"
               />
             </div>
             <div class="w-2/3 file:w-full flex flex-col justify-evenly">
               <div class="px-6 py-4">
                 <div class="font-bold text-center text-xl mb-2">
-                  Blue Laundry Website
+                  NFT World Museum
                 </div>
               </div>
               <p class="text-gray-700 text-center">
-                A website for the laundry business Blue Laundry Situated in
-                Kilifi County. Logo and Brochure by yours truly. Domain from
-                google work space.
+                A platform for digital artists to showcase their work and sell their NFTs. Also maintain an element of culture and history across the world.
               </p>
               <div class="px-6 pt-4 pb-2">
                 <div class="flex justify-between py-4">
                   <a
-                    href="https://bluelaundrykilifi.com/"
+                    href="https://nft-world-museum.vercel.app/"
                     target="_blank"
                     rel="noreferrer"
                   >
